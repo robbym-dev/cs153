@@ -43,7 +43,7 @@ from bid_engine.pricing import (
 def test_validates_within_5pct_of_tyler(code, quantity, unit, tyler_total):
     """Each line item must price within 5% of Tyler's reference figure."""
     scope = ScopeItem(code=code, quantity=quantity, unit=unit, description="")
-    unit_cost = DEFAULT_UNIT_COSTS[code]
+    unit_cost = DEFAULT_UNIT_COSTS[(code, unit)]
     wage = DEFAULT_WAGES[unit_cost.trade]
 
     line = price_scope_item(scope, unit_cost, wage)
@@ -102,35 +102,40 @@ def test_waste_rate_case_and_whitespace_insensitive():
 
 def test_zero_quantity_yields_zero_cost():
     scope = ScopeItem("WS1", 0.0, "LF")
-    line = price_scope_item(scope, DEFAULT_UNIT_COSTS["WS1"], DEFAULT_WAGES["bricklayer"])
+    line = price_scope_item(scope, DEFAULT_UNIT_COSTS[("WS1", "LF")], DEFAULT_WAGES["bricklayer"])
     assert line.total_cost == 0.0
 
 
 def test_negative_quantity_raises():
     scope = ScopeItem("WS1", -1.0, "LF")
     with pytest.raises(ValueError, match="quantity must be >= 0"):
-        price_scope_item(scope, DEFAULT_UNIT_COSTS["WS1"], DEFAULT_WAGES["bricklayer"])
+        price_scope_item(scope, DEFAULT_UNIT_COSTS[("WS1", "LF")], DEFAULT_WAGES["bricklayer"])
 
 
 def test_unit_labor_uses_full_wage_total():
     scope = ScopeItem("WS5", 1.0, "EA")
-    line = price_scope_item(scope, DEFAULT_UNIT_COSTS["WS5"], DEFAULT_WAGES["ironworker"])
-    # 0.55 hours * $107.80/hr = $59.29
-    assert line.unit_labor == pytest.approx(0.55 * 107.80)
+    uc = DEFAULT_UNIT_COSTS[("WS5", "EA")]
+    wage = DEFAULT_WAGES[uc.trade]
+    line = price_scope_item(scope, uc, wage)
+    assert line.unit_labor == pytest.approx(uc.hours_per_unit * wage.total)
 
 
 def test_waste_applied_to_lf():
     scope = ScopeItem("WS1", 100.0, "LF")
-    line = price_scope_item(scope, DEFAULT_UNIT_COSTS["WS1"], DEFAULT_WAGES["bricklayer"])
+    uc = DEFAULT_UNIT_COSTS[("WS1", "LF")]
+    wage = DEFAULT_WAGES[uc.trade]
+    line = price_scope_item(scope, uc, wage)
     # qty_with_waste = 110.0
-    expected_total = 110.0 * (0.06 * 108.02 + 0.50)
+    expected_total = 110.0 * (uc.hours_per_unit * wage.total + uc.material_per_unit)
     assert line.total_cost == pytest.approx(expected_total)
 
 
 def test_no_waste_applied_to_ea():
     scope = ScopeItem("WS5", 10.0, "EA")
-    line = price_scope_item(scope, DEFAULT_UNIT_COSTS["WS5"], DEFAULT_WAGES["ironworker"])
-    expected_total = 10.0 * (0.55 * 107.80 + 0.0)
+    uc = DEFAULT_UNIT_COSTS[("WS5", "EA")]
+    wage = DEFAULT_WAGES[uc.trade]
+    line = price_scope_item(scope, uc, wage)
+    expected_total = 10.0 * (uc.hours_per_unit * wage.total + uc.material_per_unit)
     assert line.total_cost == pytest.approx(expected_total)
 
 
