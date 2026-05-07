@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bid-engine"
+version = "0.1.0"
+description = "AI-powered construction bid extraction and generation tool"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic",
+    "openpyxl",
+    "pdf2image",
+    "pillow",
+    "pytest",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

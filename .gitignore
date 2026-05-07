@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Client / proprietary data — track outputs (extractions/*, baseline_*) instead.
+test_data/*.pdf
+test_data/*.xlsx
+
+# Stderr captures from parallel extraction runs
+tests/extractions/*.err
