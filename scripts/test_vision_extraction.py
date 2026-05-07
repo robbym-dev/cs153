@@ -5,10 +5,34 @@ import base64
 import io
 import json
 import os
+import re
 import sys
 
 from anthropic import Anthropic
 from pdf2image import convert_from_path
+
+# Single-letter prefixes that are common OCR/transcription artifacts of the
+# real (multi-letter) prefix used in the plan legend.
+SINGLE_LETTER_PREFIX_FIXUPS = {"W": "WS"}
+_SINGLE_LETTER_CODE_RE = re.compile(r"^([A-Z])(\d+)$")
+
+
+def _normalize_code(code: str) -> str:
+    m = _SINGLE_LETTER_CODE_RE.match(code)
+    if m and m.group(1) in SINGLE_LETTER_PREFIX_FIXUPS:
+        return SINGLE_LETTER_PREFIX_FIXUPS[m.group(1)] + m.group(2)
+    return code
+
+
+def _clean(items: list[dict]) -> list[dict]:
+    cleaned = []
+    for raw in items:
+        code = _normalize_code(str(raw["code"]).strip())
+        qty = float(raw["quantity"])
+        if qty <= 0:
+            continue
+        cleaned.append({"code": code, "quantity": qty, "unit": str(raw["unit"]).strip()})
+    return cleaned
 
 MODEL = "claude-opus-4-7"
 PROMPT = (
@@ -69,7 +93,7 @@ def extract_items(png_bytes: bytes) -> list[dict]:
         if text.startswith("json"):
             text = text[4:]
         text = text.strip()
-    return json.loads(text)
+    return _clean(json.loads(text))
 
 
 def main() -> int:
