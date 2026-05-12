@@ -35,15 +35,19 @@ MODEL = "claude-opus-4-7"
 MAX_IMAGE_PIXELS = 8000
 _PDF_POINTS_PER_INCH = 72
 PROMPT = (
-    "This is a marked-up construction elevation drawing. On the right side there is "
-    "a sidebar showing scope item codes (like WS1, WS5, WS8) with quantities and units. "
-    "Extract every item from the sidebar. "
-    "Scope codes follow the pattern WS followed by a number (WS1, WS5, WS10, WS19) "
-    "or R followed by a number (R1, R2, R5). There are no single-letter prefix codes — "
-    "if you see what looks like W9, it is WS9. "
-    "Return ONLY a JSON array where each element has: "
-    "code (string), quantity (number), unit (string — one of EA, FT, SQ FT, LF). "
-    "No other text."
+    "This is a construction elevation or plan drawing. Look for any keynote codes, "
+    "scope item codes, or annotation labels with associated quantities. These could "
+    "follow any pattern — examples include WS1, E03, R02, F05, M1, or any letters "
+    "followed by numbers. Also look for any sidebar or legend showing codes with "
+    "quantities and units (EA, FT, SQ FT, LF, SF, LOC, LS).\n"
+    "Extract every code-quantity pair you can find on this page. If there is a "
+    "keynote legend or work scope notes section, extract each code with its full "
+    "description.\n"
+    "If a code looks like a single letter followed by digits (e.g. W9), it may be a "
+    "misread of a two-letter code (e.g. WS9) — flag it but include it as-read.\n"
+    "Return ONLY a JSON array where each element has: code (string), quantity "
+    "(number), unit (string). If a code appears in the keynotes but has no quantity "
+    "on this page, include it with quantity 0. No other text."
 )
 
 # Single-letter prefix variants the model occasionally emits.
@@ -71,7 +75,10 @@ def _clean(raw_items: list[dict]) -> list[dict]:
         if not code or not unit:
             logger.warning("extraction item missing code/unit %r — skipping", raw)
             continue
-        if qty <= 0:
+        # The prompt asks for keynote-only codes to be returned with qty 0 so
+        # downstream code can see the full keynote dictionary. Only drop
+        # negative quantities (which are unambiguously bogus).
+        if qty < 0:
             continue
         cleaned.append({"code": code, "quantity": qty, "unit": unit})
     return cleaned
@@ -85,14 +92,14 @@ def _safe_dpi(pdf_path: Path, requested_dpi: int, max_pixels: int) -> int:
     safe, and otherwise back off to the largest DPI that fits.
     """
     info = pdfinfo_from_path(str(pdf_path))
-    raw_size = info.get("Page size", "")  # e.g. "2592 x 1728 pts"
-    try:
-        w_pts, _, h_pts = raw_size.replace("pts", "").strip().split()
-        long_inches = max(float(w_pts), float(h_pts)) / _PDF_POINTS_PER_INCH
-    except (ValueError, AttributeError):
+    raw_size = info.get("Page size", "")  # e.g. "2592 x 1728 pts" or "792 x 612 pts (letter)"
+    # Pull the first two numbers; ignore any trailing format hint like "(letter)".
+    numbers = re.findall(r"\d+(?:\.\d+)?", raw_size)
+    if len(numbers) < 2:
         logger.warning("could not parse page size %r — using requested DPI %d",
                        raw_size, requested_dpi)
         return requested_dpi
+    long_inches = max(float(numbers[0]), float(numbers[1])) / _PDF_POINTS_PER_INCH
     if long_inches <= 0:
         return requested_dpi
     max_dpi = int(max_pixels / long_inches)
