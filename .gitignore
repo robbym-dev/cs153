@@ -11,4 +11,4 @@ test_data/*.pdf
 test_data/*.xlsx
 
 # Stderr captures from parallel extraction runs
-tests/extractions/*.err
+tests/extractions/**/*.err

@@ -25,11 +25,15 @@ import re
 from pathlib import Path
 
 from anthropic import Anthropic
-from pdf2image import convert_from_path
+from pdf2image import convert_from_path, pdfinfo_from_path
 
 logger = logging.getLogger(__name__)
 
 MODEL = "claude-opus-4-7"
+
+# Claude vision rejects images whose long edge exceeds this many pixels.
+MAX_IMAGE_PIXELS = 8000
+_PDF_POINTS_PER_INCH = 72
 PROMPT = (
     "This is a marked-up construction elevation drawing. On the right side there is "
     "a sidebar showing scope item codes (like WS1, WS5, WS8) with quantities and units. "
@@ -73,14 +77,46 @@ def _clean(raw_items: list[dict]) -> list[dict]:
     return cleaned
 
 
+def _safe_dpi(pdf_path: Path, requested_dpi: int, max_pixels: int) -> int:
+    """Clamp DPI so the rendered image's long edge stays under `max_pixels`.
+
+    Large architectural sheets (Arch D 24x36, Arch E 36x48) exceed Claude's
+    8000-pixel limit at 300 DPI. We honor the caller's requested DPI when
+    safe, and otherwise back off to the largest DPI that fits.
+    """
+    info = pdfinfo_from_path(str(pdf_path))
+    raw_size = info.get("Page size", "")  # e.g. "2592 x 1728 pts"
+    try:
+        w_pts, _, h_pts = raw_size.replace("pts", "").strip().split()
+        long_inches = max(float(w_pts), float(h_pts)) / _PDF_POINTS_PER_INCH
+    except (ValueError, AttributeError):
+        logger.warning("could not parse page size %r — using requested DPI %d",
+                       raw_size, requested_dpi)
+        return requested_dpi
+    if long_inches <= 0:
+        return requested_dpi
+    max_dpi = int(max_pixels / long_inches)
+    if max_dpi < requested_dpi:
+        logger.info(
+            "page is %.1f\" long edge; clamping DPI %d → %d to stay under %d-px limit",
+            long_inches, requested_dpi, max_dpi, max_pixels,
+        )
+        return max_dpi
+    return requested_dpi
+
+
 def render_page_png(pdf_path: Path | str, page_number: int, dpi: int = 300) -> bytes:
     if page_number < 1:
         raise ValueError(f"page_number must be >= 1, got {page_number}")
     pdf_path = Path(pdf_path)
     if not pdf_path.exists():
         raise FileNotFoundError(f"PDF not found: {pdf_path}")
+    effective_dpi = _safe_dpi(pdf_path, dpi, MAX_IMAGE_PIXELS)
     images = convert_from_path(
-        str(pdf_path), dpi=dpi, first_page=page_number, last_page=page_number
+        str(pdf_path),
+        dpi=effective_dpi,
+        first_page=page_number,
+        last_page=page_number,
     )
     if not images:
         raise ValueError(f"no page {page_number} in {pdf_path}")
