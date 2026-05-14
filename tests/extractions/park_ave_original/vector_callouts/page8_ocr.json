@@ -1,0 +1,651 @@
+{
+  "pdf": "/Users/robbymanihani/Documents/cs153-project/bid-engine/test_data/PA_Exterior_Renovations_Bid_Apr_6_2026.pdf",
+  "page": 8,
+  "n_callouts": 92,
+  "results": [
+    {
+      "cx": 1502.4600830078125,
+      "cy": 1209.7799072265625,
+      "raw": "INSTALL NEW BRIC",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1468.9801025390625,
+      "cy": 1209.7799072265625,
+      "raw": "NI",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1436.340087890625,
+      "cy": 1209.7799072265625,
+      "raw": "A430",
+      "code": "A430",
+      "error": null
+    },
+    {
+      "cx": 1408.260009765625,
+      "cy": 1209.7799072265625,
+      "raw": "R",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1380.1800537109375,
+      "cy": 1209.7799072265625,
+      "raw": "F",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1348.260009765625,
+      "cy": 1209.7799072265625,
+      "raw": "FASCIA COVER",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1315.5,
+      "cy": 1209.7799072265625,
+      "raw": "C1",
+      "code": "C1",
+      "error": null
+    },
+    {
+      "cx": 1287.9000244140625,
+      "cy": 1209.7799072265625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 1255.1400146484375,
+      "cy": 1209.7799072265625,
+      "raw": "7",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1210.739990234375,
+      "cy": 1209.7799072265625,
+      "raw": "WS17",
+      "code": "WS17",
+      "error": null
+    },
+    {
+      "cx": 1168.5,
+      "cy": 1209.7799072265625,
+      "raw": "WS",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1125.1800537109375,
+      "cy": 1209.7799072265625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 1097.340087890625,
+      "cy": 1209.7799072265625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 1069.260009765625,
+      "cy": 1209.7799072265625,
+      "raw": "R2",
+      "code": "R2",
+      "error": null
+    },
+    {
+      "cx": 1031.10009765625,
+      "cy": 1209.7799072265625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 994.1400146484375,
+      "cy": 1209.7799072265625,
+      "raw": "I don't see a circle with a keynote code in the image you've shared. The image appears to show a window with panes and some horizontal lines, but no visible circle containing a",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 965.4600219726562,
+      "cy": 1209.7799072265625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 937.3800659179688,
+      "cy": 1209.7799072265625,
+      "raw": "I don't see a circle with a keynote code in this image.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 908.8200073242188,
+      "cy": 1209.7799072265625,
+      "raw": "RESCUE WINDOW",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1887.1800537109375,
+      "cy": 1313.0999755859375,
+      "raw": "I don't see a circle with a keynote code in this image. The image shows the text \"EXTERI\" (likely part of \"EXTERIOR\") with a horizontal",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 584.579833984375,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or just a plain background. If there's supposed to be a code inside a circle, it isn't",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 918.179931640625,
+      "raw": "R2",
+      "code": "R2",
+      "error": null
+    },
+    {
+      "cx": 1156.8599853515625,
+      "cy": 760.619873046875,
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be mostly blank with just a vertical line on the right side. I cannot return a code that isn't present",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 731.4599609375,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or a solid color without visible content.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 927.179931640625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 1771.1400146484375,
+      "cy": 676.260009765625,
+      "raw": "I don't see any code or text in the image you've shared\u2014it appears to be blank or just a plain circle without visible content.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1786.860107421875,
+      "cy": 2035.739990234375,
+      "raw": "I don't see any code or text in the image you've shared\u2014it appears to be blank or a solid-colored circle without visible markings.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 593.4599609375,
+      "raw": "16'",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 927.179931640625,
+      "raw": "I don't see any circle or keynote code in the image you've shared\u2014it appears to be blank or mostly white with a few horizontal lines at the top. I cannot return",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 2196.179931640625,
+      "raw": "I can't see any circle or keynote code in the image you've shared \u2014 it appears blank or just a thin light-colored strip. Could you re-upload a clearer image?",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 1863.179931640625,
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to show only horizontal lines on a blank background. I can't return a code that isn't there.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 1854.179931640625,
+      "raw": "I don't see any circle or code in the image you've shared \u2014 it appears to be blank with just some horizontal lines. Could you re-upload the image?",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 2187.89990234375,
+      "raw": "I don't see any circle or keynote code in the image you've shared \u2014 it appears to be blank/white. Could you re-upload the image?",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1156.8599853515625,
+      "cy": 2030.3399658203125,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or a solid color without visible content.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 2001.179931640625,
+      "raw": "4",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 998.1000366210938,
+      "cy": 610.739990234375,
+      "raw": "I don't see a circle with a keynote code in the described image. The image shows a cross-section with dimensions \"8'\" and \"4'\" but no circular keynote marker",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 511.7400360107422,
+      "cy": 1990.02001953125,
+      "raw": "SCALE",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 626.5800170898438,
+      "cy": 877.3798828125,
+      "raw": "8",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 511.7400360107422,
+      "cy": 853.3798828125,
+      "raw": "I don't see a circle or any keynote code in this image \u2014 it appears to show only a vertical black line on a white background.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 598.85986328125,
+      "raw": "1'-0\"",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 466.9800109863281,
+      "cy": 598.85986328125,
+      "raw": "1",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1176.0599365234375,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 459.4200134277344,
+      "cy": 2290.139892578125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 406.1400146484375,
+      "cy": 749.33984375,
+      "raw": "I don't see any code or text in the image you've shared\u2014it appears to be blank or just a plain circle with no visible markings.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 519.300048828125,
+      "cy": 1009.2598876953125,
+      "raw": "I don't see any circle or keynote code in the image you've shared \u2014 it appears to show only vertical lines/tick marks along the left and right edges with a blank center area.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1622.93994140625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 358.3800048828125,
+      "cy": 2290.139892578125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 523.1400146484375,
+      "cy": 1143.89990234375,
+      "raw": "WS",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 634.85986328125,
+      "raw": "1'-0\"",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 994.4998779296875,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1379.699951171875,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or just a plain circle without visible content.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 797.699951171875,
+      "raw": "I don't see any code or text in the image you provided \u2014 it appears to be blank or entirely white.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 797.699951171875,
+      "raw": "I can't make out any code in the image \u2014 it appears blank or I cannot discern any text.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 797.699951171875,
+      "raw": "I cannot see any code or text in the image you've provided \u2014 it appears to be blank or entirely white.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 2013.06005859375,
+      "cy": 1351.739990234375,
+      "raw": "I don't see a circle or any keynote code in this image \u2014 only a black horizontal line at the top of an otherwise blank white image.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 1072.4998779296875,
+      "raw": "I don't see any circle or keynote code in the image you've shared \u2014 it appears to be blank/white with just a few horizontal lines near the bottom. Could you re-",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 1072.4998779296875,
+      "raw": "I don't see a circle with a keynote code in the image you've described. The image appears to show vertical lines and grid patterns, but no visible circle containing a code. I",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 1072.4998779296875,
+      "raw": "I don't see a circle with a keynote code in the image you've described. The image appears to show rulers or measurement scales but no circle containing a code.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1879.1400146484375,
+      "cy": 1072.4998779296875,
+      "raw": "WS4",
+      "code": "WS4",
+      "error": null
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 1771.5,
+      "raw": "I don't see any circle with a keynote code in this image. The image appears to show simple line work without any visible code or text inside a circle.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 1771.5,
+      "raw": "WINDOW",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 1771.5,
+      "raw": "R2",
+      "code": "R2",
+      "error": null
+    },
+    {
+      "cx": 1879.1400146484375,
+      "cy": 1771.5,
+      "raw": "R2",
+      "code": "R2",
+      "error": null
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 2047.139892578125,
+      "raw": "I can't see any code or text inside the circle \u2014 the image appears blank or all white to me.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 2047.139892578125,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or just a plain circle without any visible keynote code.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1827.4200439453125,
+      "cy": 2047.139892578125,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or just a plain circle without any visible keynote code.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 927.179931640625,
+      "raw": "R2",
+      "code": "R2",
+      "error": null
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 557.699951171875,
+      "raw": "8'",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 848.4599609375,
+      "raw": "I don't see any circle with a keynote code in this image. The image appears to show simple black lines forming what looks like a partial rectangular shape, but there is no visible",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 2117.4599609375,
+      "raw": "I don't see a circle or any code in this image \u2014 only a horizontal black line on a white background.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 2196.179931640625,
+      "raw": "I can't see any circle or keynote code in the image you've shared \u2014 it appears blank or to contain only a thin horizontal line. Could you re-upload a clearer",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 1826.699951171875,
+      "raw": "I don't see any code or circle with text in the image you shared\u2014it appears to be mostly blank with just a couple of horizontal lines near the bottom. I can't return",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 978.6600341796875,
+      "cy": 1901.4599609375,
+      "raw": "I don't see any circle or code in this image\u2014it appears to be mostly blank with just a few horizontal line segments and a vertical line. There's no keynote code visible",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 721.739990234375,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or just a plain circle with no visible markings.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 328.1400146484375,
+      "cy": 2207.219970703125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1990.02001953125,
+      "raw": "I don't see a circle with a keynote code in the image you've shared \u2014 it appears to show only text/letters (\"V F X T T N\") without any circle or code marking vis",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 835.739990234375,
+      "raw": "I don't see a circle or any code in this image \u2014 it appears to show only a horizontal black line.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 489.5400085449219,
+      "cy": 548.699951171875,
+      "raw": "EXTER",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 375.5400085449219,
+      "cy": 548.699951171875,
+      "raw": "I don't see any circle or keynote code in the image you've shared \u2014 it appears to be essentially blank or nearly all white. Could you re-upload a clearer image?",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 535.1400146484375,
+      "cy": 817.260009765625,
+      "raw": "I don't see a circle or any keynote code in this image \u2014 only a vertical line on a white background.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 420.4200134277344,
+      "cy": 817.260009765625,
+      "raw": "I can't make out any code in the image\u2014it appears blank or nearly white to me.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 535.1400146484375,
+      "cy": 910.3798828125,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 420.4200134277344,
+      "cy": 910.3798828125,
+      "raw": "I don't see any code or text in the image you've shared \u2014 it appears to be blank or a solid light-colored area. Could you re-upload the image?",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 511.3800506591797,
+      "cy": 1379.699951171875,
+      "raw": "I don't see any code or text inside the image you shared \u2014 it appears blank or I cannot detect any visible keynote code.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 511.3800506591797,
+      "cy": 1622.93994140625,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 405.1800231933594,
+      "cy": 2290.139892578125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 519.1799926757812,
+      "cy": 2290.139892578125,
+      "raw": "",
+      "code": null,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 450.0600280761719,
+      "cy": 2038.97998046875,
+      "raw": "I can't make out any code in the image\u2014it appears blank or nearly blank to me.",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 564.780029296875,
+      "cy": 2038.97998046875,
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null
+    },
+    {
+      "cx": 450.0600280761719,
+      "cy": 1957.8599853515625,
+      "raw": "4",
+      "code": null,
+      "error": null
+    },
+    {
+      "cx": 564.780029296875,
+      "cy": 1957.8599853515625,
+      "raw": "RIOR E",
+      "code": null,
+      "error": null
+    }
+  ]
+}
