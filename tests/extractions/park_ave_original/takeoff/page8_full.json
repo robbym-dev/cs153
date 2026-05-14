@@ -1,0 +1,240 @@
+{
+  "page": 8,
+  "scale": {
+    "raw": "1/8\" = 1'-0\"",
+    "drawing_inches": 0.125,
+    "real_feet": 1.0,
+    "notes": "Scale noted under each of the four elevation drawings (West, North, South, East); title block states 'AS NOTED'."
+  },
+  "dimensions": [],
+  "keynotes": [
+    {
+      "code": "WS1",
+      "description": "CLEAN CAST STONE BANDS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS2",
+      "description": "REMOVE AND REPLACE CAST STONE WINDOW TRIM. SEE DETAIL 7/A702."
+    },
+    {
+      "code": "WS3",
+      "description": "CLEAN CAST STONE WINDOW HEADS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS4",
+      "description": "CLEAN CAST STONE SILLS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS5",
+      "description": "REFASTEN LOOSE GRILLE."
+    },
+    {
+      "code": "WS6",
+      "description": "STONEWORK ABOVE DOORS TO BE RECAULKED BY DISTRICT, N.I.C. CONTRACTOR TO CLEAN AND SEAL AFTER RECAULKING IS COMPLETE."
+    },
+    {
+      "code": "WS7",
+      "description": "PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS)."
+    },
+    {
+      "code": "WS8",
+      "description": "RAKE OUT AND REPOINT BRICK MORTAR JOINTS IN DELINEATED AREAS (\u00b1100 LF). SEE DETAIL 3/A430 (TYP)."
+    },
+    {
+      "code": "WS9",
+      "description": "CONTRACTOR TO REMOVE EXISTING CAULK AND RECAULK EXPANSION JOINTS."
+    },
+    {
+      "code": "WS10",
+      "description": "REPOINT HORIZONTAL JOINT AT LINTELS BETWEEN WINDOWS AND AT CORNERS. AT SINGLE WINDOWS, REPOINT HORIZONTAL JOINT AT WINDOW CORNERS. REPOINT THREE COURSES OF BRICK ABOVE LINTEL. (BASE BID QUANTITY: TWENTY-ONE (21) LINTELS, ALTERNATE 2 QUANTITY: FOUR (4) LINTELS)."
+    },
+    {
+      "code": "WS11",
+      "description": "INSTALL NEW FRP DOOR, ALUMINUM THERMALLY BROKEN DOOR FRAME, AND REINSTALL EXISTING DOOR HARDWARE. DOOR FRP COLOR TO MATCH ONE STORY BUILDING. SEE DOOR DETAILS & SCHEDULE. CONTRACTOR IS RESPONSIBLE FOR BUILDING SECURITY WHILE DOORS ARE BEING REPLACED."
+    },
+    {
+      "code": "WS12",
+      "description": "SCRAPE, WIRE BRUSH, PRIME AND PAINT EXISTING STEEL LINTEL. COLOR TO MATCH EXISTING PRECAST UNITS."
+    },
+    {
+      "code": "WS13",
+      "description": "INSTALL STEEL TUBING AND BEAM AROUND DOOR OPENING TO REINFORCE EXISTING LINTEL."
+    },
+    {
+      "code": "WS14",
+      "description": "TEMPORARILY REMOVE EXISTING/DISPLACED MASONRY AROUND DOOR AND RESET AFTER STEEL TUBING IS IN PLACE."
+    },
+    {
+      "code": "WS15",
+      "description": "REMOVE LOOSE BRICK AROUND LINTEL. SCRAPE, WIRE BRUSH, PRIME AND PAINT ALL EXPOSED PORTIONS OF STEEL LINTEL. INSTALL NEW FLASHING AND BRICK VENEER (QUANTITY: TWO (2) LINTELS). CONTRACTOR TO WORK IN A MANNER WHICH PROVIDES CONTINUOUS SUPPORT TO MASONRY ABOVE. SEE DETAIL 5/A701."
+    },
+    {
+      "code": "WS16",
+      "description": "REPAIR CRACKED BRICK. SEE DETAIL 2/A430 (TYP)."
+    },
+    {
+      "code": "WS17",
+      "description": "REFASTEN LOOSE FASCIA COVER."
+    },
+    {
+      "code": "WS18",
+      "description": "REMOVE AND DISPOSE OF BRICK IN AREAS NOTED. INSTALL NEW BRICK, MATCHING EXISTING COLOR AND TEXTURE. SEE DETAIL 1/A430 (TYP)."
+    },
+    {
+      "code": "WS19",
+      "description": "REPOINT VERTICAL JOINTS AND OUTER HEAD JOINT OF BRICK ARCH."
+    }
+  ],
+  "parsed": {
+    "WS7": [
+      {
+        "code": "WS7",
+        "quantity": 8.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(8) BRICKS"
+      }
+    ],
+    "WS8": [
+      {
+        "code": "WS8",
+        "quantity": 100.0,
+        "unit": "LF",
+        "variant": "base_bid",
+        "raw": "\u00b1100 LF"
+      }
+    ],
+    "WS10": [
+      {
+        "code": "WS10",
+        "quantity": 21.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(21) LINTELS"
+      },
+      {
+        "code": "WS10",
+        "quantity": 4.0,
+        "unit": "EA",
+        "variant": "alternate_2",
+        "raw": "(4) LINTELS"
+      }
+    ],
+    "WS15": [
+      {
+        "code": "WS15",
+        "quantity": 2.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(2) LINTELS"
+      }
+    ]
+  },
+  "probed": {
+    "WS1": {
+      "code": "WS1",
+      "quantity": 360.0,
+      "unit": "LF",
+      "callout_count": 6,
+      "notes": "WS1 calls out cast stone bands - measured as LF of horizontal band runs. Found 2 callouts on West elevation (pointing to continuous base/water table band ~240 LF across ~240' fa\u00e7ade), 2 on North partial (~60 LF), and 2 on South partial (~60 LF). Bands are continuous horizontal elements, totaling approximately 360 LF."
+    },
+    "WS2": {
+      "code": "WS2",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "Two WS2 callouts visible on the West elevation pointing to cast stone window trim at the central parapet/upper window area. Window trim replacement counted as discrete units (each)."
+    },
+    "WS3": {
+      "code": "WS3",
+      "quantity": 80.0,
+      "unit": "LF",
+      "callout_count": 2,
+      "notes": "Two WS3 callouts visible on the West elevation (Bid-B), flanking the central entrance bay pointing to second-floor cast stone window heads. Treating as typical for similar large upper-floor windows on the west facade (~20 window heads at ~4 LF each \u2248 80 LF of cast stone head joints to clean/repoint)."
+    },
+    "WS4": {
+      "code": "WS4",
+      "quantity": 280.0,
+      "unit": "LF",
+      "callout_count": 24,
+      "notes": "WS4 callouts (typical) mark cast stone window sills across all four elevations. Counted approx 8 on west, 2 on north, 2 on south, and ~12 on east elevation. Building has ~55-60 windows with cast stone sills; at ~4-5 ft per sill, estimated ~280 LF of sill joint cleaning/repointing."
+    },
+    "WS5": {
+      "code": "WS5",
+      "quantity": 1.0,
+      "unit": "EA",
+      "callout_count": 1,
+      "notes": "Found one WS5 callout on the West elevation pointing to a grille feature near the lower left. Refastening a grille is a discrete (each) item."
+    },
+    "WS6": {
+      "code": "WS6",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "WS6 callouts found above the GIRLS door on north elevation and BOYS door on south elevation. Front door on west elevation is excluded per note (previously awarded contract). Each represents stonework above a discrete door opening."
+    },
+    "WS9": {
+      "code": "WS9",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS9 callouts visible on any of the four elevations shown; WS9 appears only in the work scope notes legend."
+    },
+    "WS11": {
+      "code": "WS11",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "WS11 calls for FRP door replacement. Two door locations visible on the partial North (GIRLS) and South (BOYS) elevations, each receiving one new FRP door = 2 EA."
+    },
+    "WS12": {
+      "code": "WS12",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "WS12 refers to scraping/painting existing steel lintels - discrete items counted as EA. Callouts appear near the door lintels on the partial North and South elevations (one at each entry door)."
+    },
+    "WS13": {
+      "code": "WS13",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "WS13 describes installing steel tubing/beam around door openings to reinforce lintels. Two door openings shown (Girls entry on north partial elevation and Boys entry on south partial elevation), each requiring reinforcement."
+    },
+    "WS14": {
+      "code": "WS14",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "WS14 callouts appear at the two entrance doors (Girls on North elevation and Boys on South elevation) where masonry must be temporarily removed and reset around the door for steel tubing installation. Measured as EA since work is discrete per door opening."
+    },
+    "WS16": {
+      "code": "WS16",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS16 callouts visible on the placed elevations; only appears in the work scope notes legend."
+    },
+    "WS17": {
+      "code": "WS17",
+      "quantity": 1.0,
+      "unit": "EA",
+      "callout_count": 1,
+      "notes": "Found one WS17 callout on the Partial North Elevation pointing to a fascia cover above the entrance. Refastening a loose fascia cover is a discrete task measured each."
+    },
+    "WS18": {
+      "code": "WS18",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS18 callouts visible on any of the four elevations; only WS1-WS17 and WS19 appear as placed callouts."
+    },
+    "WS19": {
+      "code": "WS19",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS19 callouts visible on the placed elevations; WS19 only appears in the work scope notes legend."
+    }
+  }
+}

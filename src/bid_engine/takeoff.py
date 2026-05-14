@@ -27,8 +27,9 @@ import base64
 import json
 import logging
 import os
+import re
 import sys
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
@@ -210,6 +211,265 @@ def probe_page(pdf_path: Path | str, page: int) -> PageProbe:
 
 
 # ---------------------------------------------------------------------------
+# Keynote-description quantity parser
+# ---------------------------------------------------------------------------
+#
+# Engineers sometimes write quantity hints directly into keynote descriptions:
+#   "PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS)"
+#   "REPOINT JOINTS IN DELINEATED AREAS (±100 LF)"
+#   "(BASE BID QUANTITY: TWENTY-ONE (21) LINTELS, ALTERNATE 2 QUANTITY: FOUR (4) LINTELS)"
+# This parser pulls those out as structured data without an API call.
+
+
+@dataclass(frozen=True)
+class ParsedQuantity:
+    code: str
+    quantity: float
+    unit: str
+    variant: str    # "base_bid" | "alternate_<N>"
+    raw: str        # the matched substring
+
+
+# Variant markers — require a trailing ":" so we don't trigger on the bare word
+# "QUANTITY" in unrelated contexts.
+_VARIANT_RE = re.compile(
+    r"(BASE\s+BID\s+QUANTITY|ALTERNATE\s+(\d+)\s+QUANTITY|"
+    r"APPROX\.?\s+QUANTITY|QUANTITY)(?=\s*:)",
+    re.IGNORECASE,
+)
+
+# "(21) LINTELS" — numeric in parens followed by a noun
+_PAREN_NUM_NOUN_RE = re.compile(
+    r"\(\s*(\d+(?:\.\d+)?)\s*\)\s*([A-Z]+)",
+    re.IGNORECASE,
+)
+
+# "100 LF", "±100 LF", "26 SQ FT" — bare number with explicit unit / noun
+_NUM_UNIT_RE = re.compile(
+    r"±?\s*(\d+(?:\.\d+)?)\s*"
+    r"(LF|FT|LIN\s+FT|LINEAR\s+FT|SF|SQ\s*FT|SQFT|EA|LS|"
+    r"BRICKS?|LINTELS?|COURSES?|DOORS?|WINDOWS?|OPENINGS?|JOINTS?)\b",
+    re.IGNORECASE,
+)
+
+# Noun → unit hints. Nouns that map naturally to EA (countable items) or
+# to a linear/area dimension based on what the work entails.
+_NOUN_TO_UNIT = {
+    "BRICK": "EA", "BRICKS": "EA",
+    "LINTEL": "EA", "LINTELS": "EA",
+    "COURSE": "EA", "COURSES": "EA",
+    "DOOR": "EA", "DOORS": "EA",
+    "WINDOW": "EA", "WINDOWS": "EA",
+    "OPENING": "EA", "OPENINGS": "EA",
+    "JOINT": "LF", "JOINTS": "LF",
+}
+
+_UNIT_TOKEN_TO_CANON = {
+    "LF": "LF",
+    "FT": "LF",
+    "LIN FT": "LF",
+    "LINEAR FT": "LF",
+    "SF": "SF",
+    "SQ FT": "SF",
+    "SQFT": "SF",
+    "EA": "EA",
+    "LS": "LS",
+}
+
+
+def _canon_unit(token: str) -> str:
+    t = " ".join(token.strip().upper().split())  # collapse whitespace
+    if t in _UNIT_TOKEN_TO_CANON:
+        return _UNIT_TOKEN_TO_CANON[t]
+    if t in _NOUN_TO_UNIT:
+        return _NOUN_TO_UNIT[t]
+    return t
+
+
+def parse_keynote_quantities(code: str, description: str) -> list[ParsedQuantity]:
+    """Extract structured (code, quantity, unit, variant) records from a
+    keynote description.
+
+    If "BASE BID QUANTITY:" / "ALTERNATE N QUANTITY:" / "QUANTITY:" /
+    "APPROX. QUANTITY:" markers are present, split on them and one record
+    per segment. Otherwise scan for a bare "<number> <unit>" pattern.
+    Returns [] when no quantity can be found.
+    """
+    if not description:
+        return []
+
+    markers = list(_VARIANT_RE.finditer(description))
+
+    if not markers:
+        results: list[ParsedQuantity] = []
+        for m in _NUM_UNIT_RE.finditer(description):
+            qty = float(m.group(1))
+            unit = _canon_unit(m.group(2))
+            results.append(ParsedQuantity(code, qty, unit, "base_bid", m.group(0)))
+        return results
+
+    results = []
+    for i, m in enumerate(markers):
+        end = markers[i + 1].start() if i + 1 < len(markers) else len(description)
+        segment = description[m.start():end]
+        if m.group(1).upper().startswith("ALTERNATE"):
+            variant = f"alternate_{m.group(2)}"
+        else:
+            variant = "base_bid"
+
+        # Prefer "(N) <noun>" inside the segment
+        paren_match = _PAREN_NUM_NOUN_RE.search(segment)
+        if paren_match:
+            qty = float(paren_match.group(1))
+            unit = _canon_unit(paren_match.group(2))
+            results.append(ParsedQuantity(code, qty, unit, variant, paren_match.group(0)))
+            continue
+
+        # Fall back to bare "<number> <unit>"
+        num_unit = _NUM_UNIT_RE.search(segment)
+        if num_unit:
+            qty = float(num_unit.group(1))
+            unit = _canon_unit(num_unit.group(2))
+            results.append(ParsedQuantity(code, qty, unit, variant, num_unit.group(0)))
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Step 2d — per-code targeted count/measure
+# ---------------------------------------------------------------------------
+
+
+COUNT_OR_MEASURE_PROMPT_TEMPLATE = """\
+This is a construction elevation drawing. Drawing scale: {scale_raw}.
+The keynote '{code}' is defined as:
+  "{description}"
+
+Find every callout of '{code}' on this elevation (typically a circular label
+with a leader line pointing to the relevant feature). Do NOT include the
+appearance of '{code}' in the keynote legend itself, only placed callouts on
+the drawing.
+
+Decide whether this work is best measured as:
+  - EA (each / discrete items, e.g. doors, lintels, brick patches, grilles)
+  - LF (linear feet, e.g. joints, bands, sills, trim)
+  - SF (square feet, e.g. brick areas, wall regions)
+based on what the keynote describes.
+
+Then count or measure accordingly, using the scale and any visible
+dimensions to estimate. If the description embeds an approximate quantity
+(e.g. "±100 LF"), that hint is helpful but you should still verify by
+looking at the drawing.
+
+Return ONLY a JSON object:
+  {{"unit": "EA" or "LF" or "SF",
+    "quantity": <number>,
+    "callout_count": <integer, number of placed callouts of this code>,
+    "notes": "<brief note on how you arrived at the number>"}}
+
+If you cannot see any callouts of '{code}' on this elevation, return
+quantity 0 and callout_count 0.
+"""
+
+
+@dataclass(frozen=True)
+class ProbedQuantity:
+    code: str
+    quantity: float
+    unit: str
+    callout_count: int
+    notes: str
+
+
+def _scale_raw(scale: Any) -> str:
+    if isinstance(scale, dict):
+        return str(scale.get("raw", "unspecified"))
+    if isinstance(scale, list) and scale:
+        return ", ".join(str(s.get("raw", "?")) for s in scale)
+    return "unspecified"
+
+
+def probe_code_quantity(
+    png_bytes: bytes,
+    code: str,
+    description: str,
+    scale: Any,
+) -> ProbedQuantity:
+    """Step 2d: focused per-code call asking the model to count or measure."""
+    prompt = COUNT_OR_MEASURE_PROMPT_TEMPLATE.format(
+        scale_raw=_scale_raw(scale), code=code, description=description
+    )
+    response = _parse_json(_call_with_image(prompt, png_bytes))
+    if not isinstance(response, dict):
+        raise ValueError(f"probe_code_quantity: expected JSON object, got {type(response).__name__}")
+    return ProbedQuantity(
+        code=code,
+        quantity=float(response.get("quantity", 0)),
+        unit=str(response.get("unit", "EA")).upper(),
+        callout_count=int(response.get("callout_count", 0)),
+        notes=str(response.get("notes", "")),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Per-page orchestrator (steps 2a-2d)
+# ---------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class PageTakeoff:
+    page: int
+    scale: Any
+    dimensions: list[dict]
+    keynotes: list[dict]
+    parsed: dict[str, list[ParsedQuantity]]   # code -> records from descriptions
+    probed: dict[str, ProbedQuantity]         # code -> record from per-code probe
+
+
+def takeoff_page(pdf_path: Path | str, page: int) -> PageTakeoff:
+    """Run the full multi-step takeoff on one page: 2a/2b/2c + parser + 2d
+    for any code that doesn't have an embedded quantity in its description.
+    """
+    png = render_page_png(pdf_path, page)
+    logger.info("rendered page %d (%d KB)", page, len(png) // 1024)
+    scale = extract_scale(png)
+    logger.info("step 2a (scale) → %s", _scale_raw(scale))
+    dimensions = extract_dimensions(png)
+    logger.info("step 2b (dimensions) → %d items", len(dimensions))
+    keynotes = extract_keynotes(png)
+    logger.info("step 2c (keynotes) → %d codes", len(keynotes))
+
+    parsed: dict[str, list[ParsedQuantity]] = {}
+    probed: dict[str, ProbedQuantity] = {}
+    for note in keynotes:
+        code = note.get("code", "")
+        desc = note.get("description", "")
+        if not code:
+            continue
+        pqs = parse_keynote_quantities(code, desc)
+        if pqs:
+            parsed[code] = pqs
+            logger.info(
+                "  %s: parser found %d quantity record(s) embedded in description",
+                code, len(pqs),
+            )
+        else:
+            logger.info("  %s: no embedded quantity → step 2d probe", code)
+            try:
+                probed[code] = probe_code_quantity(png, code, desc, scale)
+            except Exception as exc:  # noqa: BLE001 — keep going on per-code failure
+                logger.error("  %s: probe failed: %s", code, exc)
+
+    return PageTakeoff(
+        page=page,
+        scale=scale,
+        dimensions=dimensions,
+        keynotes=keynotes,
+        parsed=parsed,
+        probed=probed,
+    )
+
+
+# ---------------------------------------------------------------------------
 # CLI probe
 # ---------------------------------------------------------------------------
 
@@ -218,19 +478,62 @@ def _main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pdf", help="Path to the plan PDF")
     parser.add_argument("page", type=int, help="1-indexed page number")
+    parser.add_argument(
+        "--full",
+        action="store_true",
+        help="Run the full pipeline (2a-2d + description-quantity parser). "
+             "Default: 2a-2c only.",
+    )
+    parser.add_argument(
+        "--json-out",
+        help="Optional path to write structured results as JSON.",
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
-    probe = probe_page(args.pdf, args.page)
 
+    if not args.full:
+        probe = probe_page(args.pdf, args.page)
+        print("\n===== SCALE =====")
+        print(json.dumps(probe.scale, indent=2))
+        print("\n===== DIMENSIONS =====")
+        print(json.dumps(probe.dimensions, indent=2))
+        print(f"({len(probe.dimensions)} dimensions extracted)")
+        print("\n===== KEYNOTES =====")
+        print(json.dumps(probe.keynotes, indent=2))
+        print(f"({len(probe.keynotes)} keynotes extracted)")
+        if args.json_out:
+            Path(args.json_out).write_text(json.dumps(asdict(probe), indent=2))
+        return 0
+
+    takeoff = takeoff_page(args.pdf, args.page)
     print("\n===== SCALE =====")
-    print(json.dumps(probe.scale, indent=2))
-    print("\n===== DIMENSIONS =====")
-    print(json.dumps(probe.dimensions, indent=2))
-    print(f"({len(probe.dimensions)} dimensions extracted)")
-    print("\n===== KEYNOTES =====")
-    print(json.dumps(probe.keynotes, indent=2))
-    print(f"({len(probe.keynotes)} keynotes extracted)")
+    print(json.dumps(takeoff.scale, indent=2))
+    print(f"\n===== DIMENSIONS ({len(takeoff.dimensions)}) =====")
+    print(json.dumps(takeoff.dimensions, indent=2))
+    print(f"\n===== KEYNOTES ({len(takeoff.keynotes)}) =====")
+    print(json.dumps(takeoff.keynotes, indent=2))
+
+    print(f"\n===== PARSED FROM DESCRIPTIONS ({sum(len(v) for v in takeoff.parsed.values())}) =====")
+    for code, pqs in sorted(takeoff.parsed.items()):
+        for pq in pqs:
+            print(f"  {code:6} {pq.quantity:>8.2f} {pq.unit:4} ({pq.variant})   raw: {pq.raw!r}")
+
+    print(f"\n===== PROBED PER-CODE ({len(takeoff.probed)}) =====")
+    for code, prq in sorted(takeoff.probed.items()):
+        print(f"  {code:6} {prq.quantity:>8.2f} {prq.unit:4}   callouts={prq.callout_count}   {prq.notes}")
+
+    if args.json_out:
+        payload = {
+            "page": takeoff.page,
+            "scale": takeoff.scale,
+            "dimensions": takeoff.dimensions,
+            "keynotes": takeoff.keynotes,
+            "parsed": {c: [asdict(p) for p in pqs] for c, pqs in takeoff.parsed.items()},
+            "probed": {c: asdict(p) for c, p in takeoff.probed.items()},
+        }
+        Path(args.json_out).write_text(json.dumps(payload, indent=2))
+        print(f"\nWrote JSON: {args.json_out}")
     return 0
 
 
