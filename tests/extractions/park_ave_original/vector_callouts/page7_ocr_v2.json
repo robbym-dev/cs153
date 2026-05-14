@@ -1,0 +1,368 @@
+{
+  "page": 7,
+  "signature": [
+    27.0,
+    0.84
+  ],
+  "legend_x_range": [
+    897.4600219726562,
+    907.4600219726562
+  ],
+  "n_circles_total": 44,
+  "n_placed": 28,
+  "n_legend": 16,
+  "ocr_results": [
+    {
+      "cx": 2045.9401245117188,
+      "cy": 1744.139892578125,
+      "raw": "2",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 2011.380126953125,
+      "cy": 1744.139892578125,
+      "raw": "I don't see any code or content in the image \u2014 it appears to be entirely blank/white. There's no circle or text visible for me to read.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 1973.4600830078125,
+      "cy": 1744.139892578125,
+      "raw": "R2",
+      "code": "R2",
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 1935.5400390625,
+      "cy": 1744.139892578125,
+      "raw": "I don't see a circle with a keynote code in this image. The image shows a horizontal black bar labeled \"6'\" (6 feet), which appears to be a dim",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 1902.300048828125,
+      "cy": 1744.139892578125,
+      "raw": "2",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 2060.4599609375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 2026.9801025390625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1994.340087890625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1966.2601318359375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1938.1800537109375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1906.14013671875,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1873.5001220703125,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1845.9000244140625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1813.1400146484375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1768.7401123046875,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1726.5001220703125,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1683.1800537109375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1655.340087890625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1627.260009765625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1588.9801025390625,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1552.1400146484375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1523.4600830078125,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1495.3800048828125,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1466.820068359375,
+      "cy": 2248.139892578125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 396.539794921875,
+      "raw": "I don't see any code or content in the image \u2014 it appears to be a blank white image with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 369.539794921875,
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 423.539794921875,
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white. I cannot return a code that isn't there.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 342.539794921875,
+      "raw": "I can't see any code or content in the image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1785.419921875,
+      "raw": "I can't see any code or content in the image\u2014it appears to be blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1758.419921875,
+      "raw": "I don't see a circle with a keynote code in this image. The image only shows the text \"CALE: 1/2\" = 1'-0\"\" (a scale notation).",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1812.419921875,
+      "raw": "I can't see any code in the image \u2014 it appears to be entirely blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1731.419921875,
+      "raw": "N/A",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1018.97998046875,
+      "raw": "I don't see any circle or keynote code in this image. The image appears to show only vertical lines and a horizontal line at the top, with no circles or text/codes visible",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 991.9798583984375,
+      "raw": "There is no circle or code visible in this image. It only shows vertical lines and a horizontal line.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 2434.85986328125,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 2461.85986328125,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1019.4600524902344,
+      "cy": 991.9798583984375,
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be blank with just two thin lines (one horizontal near the top, one vertical near the right edge).",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 785.4600219726562,
+      "cy": 991.9798583984375,
+      "raw": "I don't see a circle or any keynote code in this image. The image appears to be mostly blank with just a thin line in the lower-left area.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 1019.4600524902344,
+      "cy": 2488.85986328125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 785.4600219726562,
+      "cy": 2488.85986328125,
+      "raw": "",
+      "code": null,
+      "in_legend": false,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1045.97998046875,
+      "raw": "I don't see any circle or keynote code in this image. The image appears to show only vertical black lines on a white background, with no circles or text/codes visible.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 2488.85986328125,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 450.539794921875,
+      "raw": "I don't see any code, circle, or visible content in the image\u2014it appears to be entirely blank/white. I cannot return a code that isn't there.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 902.4600219726562,
+      "cy": 1839.419921875,
+      "raw": "I can't make out any code in the image \u2014 it appears blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    }
+  ]
+}

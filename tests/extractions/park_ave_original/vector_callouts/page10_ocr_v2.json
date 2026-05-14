@@ -1,0 +1,320 @@
+{
+  "page": 10,
+  "signature": [
+    27.0,
+    0.84
+  ],
+  "legend_x_range": [
+    1725.10009765625,
+    1735.10009765625
+  ],
+  "n_circles_total": 38,
+  "n_placed": 19,
+  "n_legend": 19,
+  "ocr_results": [
+    {
+      "cx": 692.4600219726562,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in the image \u2014 it appears to be entirely blank/white. There's nothing for me to read.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 658.8600463867188,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 626.3400268554688,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in the image \u2014 it appears to be entirely blank/white. There's nothing for me to read.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 598.260009765625,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image \u2014 it appears to be blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 570.1799926757812,
+      "cy": 1930.1400146484375,
+      "raw": "I can\u2019t make out any code \u2014 the image appears blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 538.1400146484375,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image \u2014 it appears to be entirely blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 505.5000457763672,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in the image \u2014 it appears to be entirely blank/white. I can't return a code that isn't there.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 477.9000244140625,
+      "cy": 1930.1400146484375,
+      "raw": "I can't make out any code in the image\u2014it appears to be a blank white image with no visible circle or text.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 445.1400146484375,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white. There's no keynote code I can read.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 400.7400207519531,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image \u2014 it appears to be entirely blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 358.5,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in the image \u2014 it appears to be entirely blank/white. There's no keynote code I can return.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 315.1800231933594,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code or content in the image \u2014 it appears to be a blank white image.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 287.3399963378906,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image\u2014it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 259.260009765625,
+      "cy": 1930.1400146484375,
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 220.98001098632812,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image\u2014it appears to be blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 184.1400146484375,
+      "cy": 1930.1400146484375,
+      "raw": "I can't see any code or content in the image\u2014it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 155.4600067138672,
+      "cy": 1930.1400146484375,
+      "raw": "6",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 127.3800048828125,
+      "cy": 1930.1400146484375,
+      "raw": "6 \u2014 11:27am",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 98.82000732421875,
+      "cy": 1930.1400146484375,
+      "raw": "6 \u2014 11:27am",
+      "code": null,
+      "in_legend": false,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 495.2998046875,
+      "raw": "I don't see a circle with a keynote code in this image. The image appears to show only intersecting black lines forming an inverted L-shape or corner, with no visible circ",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 652.139892578125,
+      "raw": "I can't see any code or circle in this image\u2014it appears nearly blank with only a few faint horizontal lines.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1232.4599609375,
+      "raw": "I don't see any code or content in the image \u2014 it appears to be entirely blank/white. There is no circle or text visible for me to read.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1565.4599609375,
+      "raw": "I don't see any code or content in the image\u2014it appears to be entirely blank/white. I cannot return a code that isn't there.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 2145.89990234375,
+      "raw": "I don't see any circle or keynote code in this image\u2014it appears to show only a horizontal black line on a white background.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 2302.6201171875,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 2527.6201171875,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 805.139892578125,
+      "raw": "I can't see any code or content in the image\u2014it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 753.2998046875,
+      "raw": "I can't see any code or content in the image you provided \u2014 it appears to be entirely blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1463.8199462890625,
+      "raw": "I can't see any code or content in the image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 258.2998046875,
+      "raw": "I don't see any code, circle, or visible content in the image\u2014it appears to be entirely blank/white. There's nothing for me to read.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1411.0198974609375,
+      "raw": "WS5",
+      "code": "WS5",
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1345.97998046875,
+      "raw": "I can't make out any code in the image\u2014it appears blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1286.0999755859375,
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 1982.5799560546875,
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white. I cannot return a code that isn't there.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 384.2998046875,
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white. There's no keynote code I can read.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 878.33984375,
+      "raw": "I can't make out any code \u2014 the image appears blank/white with no visible circle or text.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 2066.580078125,
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be blank/white with a black bar at the bottom.",
+      "code": null,
+      "in_legend": true,
+      "error": null
+    },
+    {
+      "cx": 1730.10009765625,
+      "cy": 2413.6201171875,
+      "raw": "",
+      "code": null,
+      "in_legend": true,
+      "error": "degenerate crop"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+page 7: 3024 x 2160 pts
+  near-circular candidates: 61
+  detected signature: diameter=27.0 pt, stroke=0.84 pt
+  signature-matched circles: 44
+  detected legend column: x ∈ (897, 907)
+  placed callouts: 28   legend bullets: 16
+  skipping off-page callout: degenerate crop rect for callout at (2060.5,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (2027.0,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1994.3,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1966.3,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1938.2,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1906.1,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1873.5,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1845.9,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1813.1,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1768.7,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1726.5,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1683.2,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1655.3,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1627.3,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1589.0,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1552.1,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1523.5,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1495.4,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (1466.8,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (902.5,2434.9)
+  skipping off-page callout: degenerate crop rect for callout at (902.5,2461.9)
+  skipping off-page callout: degenerate crop rect for callout at (1019.5,2488.9)
+  skipping off-page callout: degenerate crop rect for callout at (785.5,2488.9)
+  skipping off-page callout: degenerate crop rect for callout at (902.5,2488.9)
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 25/44
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 44/44
+  wrote /Users/robbymanihani/Documents/cs153-project/bid-engine/tests/extractions/park_ave_original/vector_callouts/page7_ocr_v2.json
+page 8: 3024 x 2160 pts
+  near-circular candidates: 98
+  detected signature: diameter=27.0 pt, stroke=0.84 pt
+  signature-matched circles: 92
+  detected legend column: x ∈ (658, 668)
+  placed callouts: 85   legend bullets: 7
+  skipping off-page callout: degenerate crop rect for callout at (581.0,2248.1)
+  skipping off-page callout: degenerate crop rect for callout at (459.4,2290.1)
+  skipping off-page callout: degenerate crop rect for callout at (358.4,2290.1)
+  skipping off-page callout: degenerate crop rect for callout at (405.2,2290.1)
+  skipping off-page callout: degenerate crop rect for callout at (519.2,2290.1)
+Retrying request to /v1/messages in 0.419207 seconds
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 25/92
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 50/92
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 75/92
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 92/92
+  wrote /Users/robbymanihani/Documents/cs153-project/bid-engine/tests/extractions/park_ave_original/vector_callouts/page8_ocr_v2.json
+page 9: 3024 x 2160 pts
+  near-circular candidates: 48
+  detected signature: diameter=27.0 pt, stroke=0.84 pt
+  signature-matched circles: 40
+  detected legend column: x ∈ (1790, 1801)
+  placed callouts: 27   legend bullets: 13
+  skipping off-page callout: degenerate crop rect for callout at (1795.3,2370.5)
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 25/40
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 40/40
+  wrote /Users/robbymanihani/Documents/cs153-project/bid-engine/tests/extractions/park_ave_original/vector_callouts/page9_ocr_v2.json
+page 10: 3024 x 2160 pts
+  near-circular candidates: 42
+  detected signature: diameter=27.0 pt, stroke=0.84 pt
+  signature-matched circles: 38
+  detected legend column: x ∈ (1725, 1735)
+  placed callouts: 19   legend bullets: 19
+  skipping off-page callout: degenerate crop rect for callout at (1730.1,2302.6)
+  skipping off-page callout: degenerate crop rect for callout at (1730.1,2527.6)
+  skipping off-page callout: degenerate crop rect for callout at (1730.1,2413.6)
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 25/38
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+    OCR progress: 38/38
+  wrote /Users/robbymanihani/Documents/cs153-project/bid-engine/tests/extractions/park_ave_original/vector_callouts/page10_ocr_v2.json
+
+===============================================================================================
+MULTI-PAGE VECTOR-CALLOUT TAKEOFF vs TYLER
+===============================================================================================
+
+Pages processed: [7, 8, 9, 10]
+  p7: signature d=27.0pt s=0.84pt  legend x∈(897,907)  placed=28  legend_bullets=16
+  p8: signature d=27.0pt s=0.84pt  legend x∈(658,668)  placed=85  legend_bullets=7
+  p9: signature d=27.0pt s=0.84pt  legend x∈(1790,1801)  placed=27  legend_bullets=13
+  p10: signature d=27.0pt s=0.84pt  legend x∈(1725,1735)  placed=19  legend_bullets=19
+
+OCR valid / total: 42/214 (19.6%)
+
+CODE   PLACED LEGEND  per-page  Tyler quantities
+-----------------------------------------------------------------------------------------------
+A430        1      0   p7=0, p8=1, p9=0, p10=0   —
+R1          0      0   p7=0, p8=0, p9=0, p10=0   2 EA
+R2          5      3   p7=1, p8=4, p9=0, p10=0   8 EA  Δ=-3 (-38%) ✗
+R3          0      0   p7=0, p8=0, p9=0, p10=0   2 EA
+R4          0      0   p7=0, p8=0, p9=0, p10=0   2 EA
+R5          0      0   p7=0, p8=0, p9=0, p10=0   2 EA
+WS1         5      0   p7=0, p8=5, p9=0, p10=0   250.01 LF
+WS2         0      0   p7=0, p8=0, p9=0, p10=0   80.6 LF
+WS3         0      0   p7=0, p8=0, p9=0, p10=0   55.11 LF
+WS4         3      0   p7=0, p8=3, p9=0, p10=0   506.34 LF
+WS5        13      4   p7=0, p8=13, p9=0, p10=0   23 EA  Δ=-10 (-43%) ✗
+WS6         0      0   p7=0, p8=0, p9=0, p10=0   29.95 SF
+WS7         0      0   p7=0, p8=0, p9=0, p10=0   7 EA
+WS8         2      1   p7=0, p8=2, p9=0, p10=0   114 LF
+WS9         0      0   p7=0, p8=0, p9=0, p10=0   210.54 LF
+WS10        0      2   p7=0, p8=0, p9=0, p10=0   199.68 LF + 207.93 SF
+WS12        0      0   p7=0, p8=0, p9=0, p10=0   6.4 SF
+WS13        0      0   p7=0, p8=0, p9=0, p10=0   48.26 LF
+WS14        0      0   p7=0, p8=0, p9=0, p10=0   16.68 SF
+WS15        0      0   p7=0, p8=0, p9=0, p10=0   126.73 SF
+WS16        2      0   p7=0, p8=2, p9=0, p10=0   26.12 SF
+WS17        0      0   p7=0, p8=0, p9=0, p10=0   11.24 LF
+WS18        0      0   p7=0, p8=0, p9=0, p10=0   53.14 SF
+WS19        1      0   p7=0, p8=1, p9=0, p10=0   130.61 LF
+
+EA-direct placed-callout comparisons within ±15%: 0/2
+
+Top unrecognized OCR outputs (top 10 of 105):
+   33 × ''
+    8 × "I don't see any code, circle, or visible content in this image — it appears to b"
+    6 × "I don't see any code, circle, or visible content in this image—it appears to be "
+    4 × "I can't see any code or content in the image—it appears to be entirely blank/whi"
+    3 × "I can't see any code or content in the image — it appears to be entirely blank/w"
+    3 × 'N/A'
+    3 × "I don't see any code, circle, or visible content in this image—it appears to be "
+    3 × '1'
+    3 × "I can't see any code or content in the image — it appears to be entirely blank/w"
+    2 × '2'
