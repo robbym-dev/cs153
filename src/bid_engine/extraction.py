@@ -112,13 +112,26 @@ def _safe_dpi(pdf_path: Path, requested_dpi: int, max_pixels: int) -> int:
     return requested_dpi
 
 
-def render_page_png(pdf_path: Path | str, page_number: int, dpi: int = 300) -> bytes:
+def render_page_png(
+    pdf_path: Path | str,
+    page_number: int,
+    dpi: int = 300,
+    *,
+    clamp_dpi: bool = True,
+) -> bytes:
+    """Render one PDF page to PNG bytes.
+
+    `clamp_dpi=True` (default) auto-reduces DPI so the rendered long edge stays
+    under Claude's 8000-pixel image limit. Set `clamp_dpi=False` when the caller
+    will crop the result before sending to the API (e.g. sliding window) — the
+    individual crops will fit even when the full render does not.
+    """
     if page_number < 1:
         raise ValueError(f"page_number must be >= 1, got {page_number}")
     pdf_path = Path(pdf_path)
     if not pdf_path.exists():
         raise FileNotFoundError(f"PDF not found: {pdf_path}")
-    effective_dpi = _safe_dpi(pdf_path, dpi, MAX_IMAGE_PIXELS)
+    effective_dpi = _safe_dpi(pdf_path, dpi, MAX_IMAGE_PIXELS) if clamp_dpi else dpi
     images = convert_from_path(
         str(pdf_path),
         dpi=effective_dpi,

@@ -1,0 +1,265 @@
+{
+  "page": 10,
+  "scale": {
+    "raw": "1/8\" = 1'-0\"",
+    "drawing_inches": 0.125,
+    "real_feet": 1.0,
+    "notes": "Scale printed under each of the three partial elevations (10, 11, 12); all at the same scale."
+  },
+  "keynotes": [
+    {
+      "code": "WS1",
+      "description": "CLEAN CAST STONE BANDS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS2",
+      "description": "REMOVE AND REPLACE CAST STONE WINDOW TRIM. SEE DETAIL 7/A702."
+    },
+    {
+      "code": "WS3",
+      "description": "CLEAN CAST STONE WINDOW HEADS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS4",
+      "description": "CLEAN CAST STONE SILLS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS5",
+      "description": "REFASTEN LOOSE GRILLE."
+    },
+    {
+      "code": "WS6",
+      "description": "STONEWORK ABOVE DOORS TO BE RECAULKED BY DISTRICT, N.I.C. CONTRACTOR TO CLEAN AND SEAL AFTER RECAULKING IS COMPLETE."
+    },
+    {
+      "code": "WS7",
+      "description": "PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS)."
+    },
+    {
+      "code": "WS8",
+      "description": "RAKE OUT AND REPOINT BRICK MORTAR JOINTS IN DELINEATED AREAS (\u00b1100 LF). SEE DETAIL 3/A430 (TYP)."
+    },
+    {
+      "code": "WS9",
+      "description": "CONTRACTOR TO REMOVE EXISTING CAULK AND RECAULK EXPANSION JOINTS."
+    },
+    {
+      "code": "WS10",
+      "description": "REPOINT HORIZONTAL JOINT AT LINTELS BETWEEN WINDOWS AND AT CORNERS. AT SINGLE WINDOWS, REPOINT HORIZONTAL JOINT AT WINDOW CORNERS. REPOINT THREE COURSES OF BRICK ABOVE LINTEL. (BASE BID QUANTITY: TWENTY-ONE (21) LINTELS, ALTERNATE 2 QUANTITY: FOUR (4) LINTELS)."
+    },
+    {
+      "code": "WS11",
+      "description": "INSTALL NEW FRP DOOR, ALUMINUM THERMALLY BROKEN DOOR FRAME, AND REINSTALL EXISTING DOOR HARDWARE. DOOR FRP COLOR TO MATCH ONE STORY BUILDING. SEE DOOR DETAILS & SCHEDULE. CONTRACTOR IS RESPONSIBLE FOR BUILDING SECURITY WHILE DOORS ARE BEING REPLACED."
+    },
+    {
+      "code": "WS12",
+      "description": "SCRAPE, WIRE BRUSH, PRIME AND PAINT EXISTING STEEL LINTEL. COLOR TO MATCH EXISTING PRECAST UNITS."
+    },
+    {
+      "code": "WS13",
+      "description": "INSTALL STEEL TUBING AND BEAM AROUND DOOR OPENING TO REINFORCE EXISTING LINTEL."
+    },
+    {
+      "code": "WS14",
+      "description": "TEMPORARILY REMOVE EXISTING/DISPLACED MASONRY AROUND DOOR AND RESET AFTER STEEL TUBING IS IN PLACE."
+    },
+    {
+      "code": "WS15",
+      "description": "REMOVE LOOSE BRICK AROUND LINTEL. SCRAPE, WIRE BRUSH, PRIME AND PAINT ALL EXPOSED PORTIONS OF STEEL LINTEL. INSTALL NEW FLASHING AND BRICK VENEER (QUANTITY: TWO (2) LINTELS). CONTRACTOR TO WORK IN A MANNER WHICH PROVIDES CONTINUOUS SUPPORT TO MASONRY ABOVE. SEE DETAIL 5/A701."
+    },
+    {
+      "code": "WS16",
+      "description": "REPAIR CRACKED BRICK. SEE DETAIL 2/A430 (TYP)."
+    },
+    {
+      "code": "WS17",
+      "description": "REFASTEN LOOSE FASCIA COVER."
+    },
+    {
+      "code": "WS18",
+      "description": "REMOVE AND DISPOSE OF BRICK IN AREAS NOTED. INSTALL NEW BRICK, MATCHING EXISTING COLOR AND TEXTURE. SEE DETAIL 1/A430 (TYP)."
+    },
+    {
+      "code": "WS19",
+      "description": "REPOINT VERTICAL JOINTS AND OUTER HEAD JOINT OF BRICK ARCH."
+    }
+  ],
+  "parsed": {
+    "WS7": [
+      {
+        "code": "WS7",
+        "quantity": 8.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(8) BRICKS"
+      }
+    ],
+    "WS8": [
+      {
+        "code": "WS8",
+        "quantity": 100.0,
+        "unit": "LF",
+        "variant": "base_bid",
+        "raw": "\u00b1100 LF"
+      }
+    ],
+    "WS10": [
+      {
+        "code": "WS10",
+        "quantity": 21.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(21) LINTELS"
+      },
+      {
+        "code": "WS10",
+        "quantity": 4.0,
+        "unit": "EA",
+        "variant": "alternate_2",
+        "raw": "(4) LINTELS"
+      }
+    ],
+    "WS15": [
+      {
+        "code": "WS15",
+        "quantity": 2.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(2) LINTELS"
+      }
+    ]
+  },
+  "probed": {
+    "WS1": {
+      "code": "WS1",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS2": {
+      "code": "WS2",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS3": {
+      "code": "WS3",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS4": {
+      "code": "WS4",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS5": {
+      "code": "WS5",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS6": {
+      "code": "WS6",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS9": {
+      "code": "WS9",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS11": {
+      "code": "WS11",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS12": {
+      "code": "WS12",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS13": {
+      "code": "WS13",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS14": {
+      "code": "WS14",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS16": {
+      "code": "WS16",
+      "quantity": 4.0,
+      "unit": "EA",
+      "callout_count": 4,
+      "notes": "TL: cc=3 qty=3 EA | TR: cc=1 qty=1 EA"
+    },
+    "WS17": {
+      "code": "WS17",
+      "quantity": 15.0,
+      "unit": "LF",
+      "callout_count": 1,
+      "notes": "TL: cc=1 qty=15 LF"
+    },
+    "WS18": {
+      "code": "WS18",
+      "quantity": 3.0,
+      "unit": "SF",
+      "callout_count": 1,
+      "notes": "TL: cc=1 qty=3 SF"
+    },
+    "WS19": {
+      "code": "WS19",
+      "quantity": 9.0,
+      "unit": "EA",
+      "callout_count": 9,
+      "notes": "TL: cc=4 qty=4 EA | TR: cc=5 qty=5 EA"
+    }
+  },
+  "converted": {
+    "WS10": {
+      "code": "WS10",
+      "original_unit": "EA",
+      "original_quantity": 21.0,
+      "correct_unit": "LF",
+      "converted_quantity": 210.0,
+      "reasoning": "Repointing horizontal joints at lintels is measured by linear foot along the joint length. Typical window lintel spans approximately 4 ft; repointing the lintel joint plus three courses above (at ~2.67 in per course = ~8 in additional height, with horizontal joints at each course) yields roughly 4 LF at lintel + 3 courses x ~4 LF = ~16 LF per location, but accounting for corner returns and typical estimating averages, approximately 10 LF per lintel is standard, giving 21 x 10 = 210 LF."
+    },
+    "WS15": {
+      "code": "WS15",
+      "original_unit": "EA",
+      "original_quantity": 2.0,
+      "correct_unit": "LF",
+      "converted_quantity": 12.0,
+      "reasoning": "Lintel repair work (remove loose brick, scrape/prime/paint steel lintel, install flashing and brick veneer) is measured in linear feet along the length of the lintel. Typical window/door lintels span about 6 LF each; 2 lintels \u00d7 6 LF = 12 LF."
+    },
+    "WS19": {
+      "code": "WS19",
+      "original_unit": "EA",
+      "original_quantity": 9.0,
+      "correct_unit": "LF",
+      "converted_quantity": 63.0,
+      "reasoning": "Repointing vertical joints and outer head joints of a brick arch is measured in linear feet along the joint length. For a typical brick arch opening (~3-4 ft wide), the vertical joints and outer head joint total roughly 7 LF per arch. 9 arches \u00d7 7 LF \u2248 63 LF."
+    }
+  }
+}

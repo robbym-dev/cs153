@@ -70,23 +70,50 @@ def load_tyler(path: Path) -> dict[tuple[str, str], float]:
     return dict(totals)
 
 
-def load_pages(pages_dir: Path) -> dict[int, dict]:
+def load_pages(pages_dir: Path, suffix: str = "_full") -> dict[int, dict]:
     pages = {}
-    for f in sorted(pages_dir.glob("page*_full.json")):
+    for f in sorted(pages_dir.glob(f"page*{suffix}.json")):
         data = json.loads(f.read_text())
         pages[data["page"]] = data
     return pages
 
 
-def aggregate(pages: dict[int, dict]) -> tuple[dict, dict, list[str]]:
-    """Return (parsed_dedup, probed_sum, warnings).
+def _apply_conversion(code: str, unit: str, qty: float, conversions: list[dict]) -> tuple[str, float, str]:
+    """If a unit conversion exists for this (code, EA, qty), apply it.
+
+    Conversions across pages should be consistent for the same code. If
+    multiple pages produced a conversion for the same code, average their
+    converted_quantity values. Returns (final_unit, final_qty, note).
+    """
+    if unit != "EA":
+        return unit, qty, ""
+    matching = [c for c in conversions if c["code"] == code]
+    if not matching:
+        return unit, qty, ""
+    units = {c["correct_unit"] for c in matching}
+    if len(units) > 1:
+        # Pick the most common unit, average within that unit
+        target = Counter(c["correct_unit"] for c in matching).most_common(1)[0][0]
+    else:
+        target = next(iter(units))
+    same_unit = [c for c in matching if c["correct_unit"] == target]
+    avg_qty = sum(c["converted_quantity"] for c in same_unit) / len(same_unit)
+    return target, float(avg_qty), f"converted from {qty:g} EA via {len(same_unit)} page(s)"
+
+
+def aggregate(pages: dict[int, dict]) -> tuple[dict, dict, list[str], list[dict]]:
+    """Return (parsed_dedup, probed_sum, warnings, conversions).
 
     parsed_dedup keys: (code, variant) → {quantity, unit, pages: list[int]}
     probed_sum    keys: (code, unit)   → {quantity, callouts, pages: list[int]}
+    conversions: list of unit-conversion records collected across pages
+                 (each entry: {code, original_unit, original_quantity,
+                 correct_unit, converted_quantity, reasoning, page})
     """
     parsed_dedup: dict = {}
     probed_sum: dict = defaultdict(lambda: {"quantity": 0.0, "callouts": 0, "pages": []})
     warnings: list[str] = []
+    conversions: list[dict] = []
 
     for page, data in sorted(pages.items()):
         for code, pqs in data.get("parsed", {}).items():
@@ -118,34 +145,49 @@ def aggregate(pages: dict[int, dict]) -> tuple[dict, dict, list[str]]:
             probed_sum[key]["callouts"] += int(probe["callout_count"])
             probed_sum[key]["pages"].append(page)
 
-    return parsed_dedup, dict(probed_sum), warnings
+        # v2 conversions (absent in v1 files)
+        for code, conv in data.get("converted", {}).items():
+            conversions.append({**conv, "page": page})
+
+    return parsed_dedup, dict(probed_sum), warnings, conversions
 
 
 def build_engine_totals(
     parsed_dedup: dict,
     probed_sum: dict,
+    conversions: list[dict] | None = None,
 ) -> dict[tuple[str, str], dict]:
     """Combined engine extraction per (code, unit). Parsed (base_bid) wins
     where both sources exist; probed-only otherwise. Alternates kept separate.
+
+    When `conversions` is provided (v2 output) and a code's combined unit is
+    EA, replace with the converted unit/quantity from the unit-conversion pass.
     """
     engine: dict = {}
+    conversions = conversions or []
 
     for (code, variant), v in parsed_dedup.items():
         if variant != "base_bid":
             continue
-        key = (code, v["unit"])
-        engine[key] = {"quantity": v["quantity"], "source": "parsed",
-                       "pages": v["pages"]}
+        unit, qty, note = _apply_conversion(code, v["unit"], v["quantity"], conversions)
+        key = (code, unit)
+        engine[key] = {
+            "quantity": qty,
+            "source": "parsed" + (f" [{note}]" if note else ""),
+            "pages": v["pages"],
+        }
 
     for (code, unit), v in probed_sum.items():
-        key = (code, unit)
+        new_unit, new_qty, note = _apply_conversion(code, unit, v["quantity"], conversions)
+        key = (code, new_unit)
         if key in engine:
-            engine[key]["source"] = "parsed (probed agrees " + (
-                "with $%.2f" % v["quantity"] if v["quantity"] else "with 0"
-            ) + ")"
-        elif v["quantity"] > 0 or v["callouts"] > 0:
-            engine[key] = {"quantity": v["quantity"], "source": "probed",
-                           "pages": v["pages"]}
+            engine[key]["source"] += " + probed"
+        elif new_qty > 0 or v["callouts"] > 0:
+            engine[key] = {
+                "quantity": new_qty,
+                "source": "probed" + (f" [{note}]" if note else ""),
+                "pages": v["pages"],
+            }
     return engine
 
 
@@ -263,16 +305,35 @@ def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--pages-dir", default=str(DEFAULT_PAGES_DIR))
     p.add_argument("--spreadsheet", default=str(DEFAULT_SPREADSHEET))
+    p.add_argument(
+        "--suffix",
+        default="_full",
+        help="JSON filename suffix to load (_full for v1, _v2 for v2). Default: _full",
+    )
     args = p.parse_args(argv)
 
-    pages = load_pages(Path(args.pages_dir))
+    pages = load_pages(Path(args.pages_dir), suffix=args.suffix)
     if not pages:
-        print(f"no page*_full.json found in {args.pages_dir}")
+        print(f"no page*{args.suffix}.json found in {args.pages_dir}")
         return 1
-    parsed_dedup, probed_sum, warnings = aggregate(pages)
+    parsed_dedup, probed_sum, warnings, conversions = aggregate(pages)
     tyler = load_tyler(Path(args.spreadsheet))
-    engine = build_engine_totals(parsed_dedup, probed_sum)
+    engine = build_engine_totals(parsed_dedup, probed_sum, conversions)
     print_comparison(engine, tyler, parsed_dedup, probed_sum, warnings, pages)
+    if conversions:
+        print()
+        print(f"Unit conversions applied ({len(conversions)} record(s) across pages):")
+        seen = set()
+        for c in conversions:
+            sig = (c["code"], c["correct_unit"])
+            if sig in seen:
+                continue
+            seen.add(sig)
+            print(
+                f"  {c['code']:6} {c['original_quantity']:>5.1f} {c['original_unit']} → "
+                f"{c['converted_quantity']:>7.2f} {c['correct_unit']}  "
+                f"{c['reasoning'][:70]}"
+            )
     return 0
 
 

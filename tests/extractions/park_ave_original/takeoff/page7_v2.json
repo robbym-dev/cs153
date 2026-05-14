@@ -1,0 +1,312 @@
+{
+  "page": 7,
+  "scale": {
+    "raw": "1/2\" = 1'-0\"",
+    "drawing_inches": 0.5,
+    "real_feet": 1.0,
+    "notes": "All four partial floor plans on sheet labeled 1/2\" = 1'-0\"; title block states 'AS NOTED'."
+  },
+  "keynotes": [
+    {
+      "code": "R1",
+      "description": "Remove existing doors. Patch all disturbed surfaces to match existing adjacent surfaces."
+    },
+    {
+      "code": "R2",
+      "description": "Remove existing aluminum clad window(s), metal frames, transoms, hardware, saddles, side-lites, window treatments, trim, anchors, sealant, adhesives and all related items. Patch all disturbed surfaces to match existing adjacent surfaces."
+    },
+    {
+      "code": "R3",
+      "description": "Remove existing sealant, fasteners and all related items."
+    },
+    {
+      "code": "R4",
+      "description": "Contractor to perform partial removal of existing wood / hollow metal frame to determine actual field conditions and prepare shop drawings. It is the intent of this project to remove the existing frame(s)."
+    },
+    {
+      "code": "R5",
+      "description": "Remove existing hardware from existing doors (exit devices, closers, removable mullions). Reinstall all hardware on new doors. Coordinate new door and frame preparations with existing hardware."
+    },
+    {
+      "code": "WS1",
+      "description": "Clean cast stone bands, repoint and cover all horizontal & vertical joints."
+    },
+    {
+      "code": "WS2",
+      "description": "Remove and replace cast stone window trim. See detail 7/A702."
+    },
+    {
+      "code": "WS3",
+      "description": "Clean cast stone window heads, repoint and cover all horizontal & vertical joints."
+    },
+    {
+      "code": "WS4",
+      "description": "Clean cast stone sills, repoint and cover all horizontal & vertical joints."
+    },
+    {
+      "code": "WS5",
+      "description": "Refasten loose grille."
+    },
+    {
+      "code": "WS6",
+      "description": "Stonework above doors to be recaulked by district, N.I.C. Contractor to clean and seal after recaulking is complete."
+    },
+    {
+      "code": "WS7",
+      "description": "Patch holes in face brick (approx. quantity: eight (8) bricks)."
+    },
+    {
+      "code": "WS8",
+      "description": "Rake out and repoint brick mortar joints in delineated areas (\u00b1100 LF). See detail 3/A430 (typ.)."
+    },
+    {
+      "code": "WS9",
+      "description": "Contractor to remove existing caulk and recaulk expansion joints."
+    },
+    {
+      "code": "WS10",
+      "description": "Repoint horizontal joint at lintels between windows and at corners. At single windows, repoint horizontal joint at window corners, repoint three courses of brick above lintel. (Base bid quantity: twenty-one (21) lintels, alternate 2 quantity: four (4) lintels)."
+    },
+    {
+      "code": "WS11",
+      "description": "Install new FRP door, aluminum thermally broken door frame, and reinstall existing door hardware. Door FRP color to match one story building. See door details & schedule. Contractor is responsible for building security while doors are being replaced."
+    },
+    {
+      "code": "WS12",
+      "description": "Scrape, wire brush, prime and paint existing steel lintel. Color to match existing precast units."
+    },
+    {
+      "code": "WS13",
+      "description": "Install steel tubing and beam around door opening to reinforce existing lintel."
+    },
+    {
+      "code": "WS14",
+      "description": "Temporarily remove existing/displaced masonry around door and reset after steel tubing is in place."
+    },
+    {
+      "code": "WS15",
+      "description": "Remove loose brick around lintel. Scrape, wire brush, prime and paint all exposed portions of steel lintel. Install new flashing and brick veneer (quantity: two (2) lintels). Contractor to work in a manner which provides continuous support to masonry above. See detail 5/A701."
+    },
+    {
+      "code": "WS16",
+      "description": "Repair cracked brick. See detail 2/A430 (typ.)."
+    },
+    {
+      "code": "WS17",
+      "description": "Refasten loose fascia cover."
+    },
+    {
+      "code": "WS18",
+      "description": "Remove and dispose of brick in areas noted. Install new brick, matching existing color and texture. See detail 1/A430 (typ.)."
+    },
+    {
+      "code": "WS19",
+      "description": "Repoint vertical joints and outer head joint of brick arch."
+    }
+  ],
+  "parsed": {
+    "WS7": [
+      {
+        "code": "WS7",
+        "quantity": 8.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(8) bricks"
+      }
+    ],
+    "WS8": [
+      {
+        "code": "WS8",
+        "quantity": 100.0,
+        "unit": "LF",
+        "variant": "base_bid",
+        "raw": "\u00b1100 LF"
+      }
+    ],
+    "WS10": [
+      {
+        "code": "WS10",
+        "quantity": 21.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(21) lintels"
+      },
+      {
+        "code": "WS10",
+        "quantity": 4.0,
+        "unit": "EA",
+        "variant": "alternate_2",
+        "raw": "(4) lintels"
+      }
+    ],
+    "WS15": [
+      {
+        "code": "WS15",
+        "quantity": 2.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(2) lintels"
+      }
+    ]
+  },
+  "probed": {
+    "R1": {
+      "code": "R1",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=2 EA | BR: cc=1 qty=1 EA"
+    },
+    "R2": {
+      "code": "R2",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=1 EA"
+    },
+    "R3": {
+      "code": "R3",
+      "quantity": 17.0,
+      "unit": "LF",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=17 LF"
+    },
+    "R4": {
+      "code": "R4",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=1 EA"
+    },
+    "R5": {
+      "code": "R5",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=2 EA | BR: cc=1 qty=1 EA"
+    },
+    "WS1": {
+      "code": "WS1",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS2": {
+      "code": "WS2",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS3": {
+      "code": "WS3",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS4": {
+      "code": "WS4",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS5": {
+      "code": "WS5",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS6": {
+      "code": "WS6",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS9": {
+      "code": "WS9",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS11": {
+      "code": "WS11",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=1 EA"
+    },
+    "WS12": {
+      "code": "WS12",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=1 EA"
+    },
+    "WS13": {
+      "code": "WS13",
+      "quantity": 4.0,
+      "unit": "EA",
+      "callout_count": 4,
+      "notes": "BL: cc=2 qty=2 EA | BR: cc=2 qty=2 EA"
+    },
+    "WS14": {
+      "code": "WS14",
+      "quantity": 2.0,
+      "unit": "EA",
+      "callout_count": 2,
+      "notes": "BL: cc=1 qty=1 EA | BR: cc=1 qty=1 EA"
+    },
+    "WS16": {
+      "code": "WS16",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS17": {
+      "code": "WS17",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS18": {
+      "code": "WS18",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    },
+    "WS19": {
+      "code": "WS19",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "no callouts in any quadrant"
+    }
+  },
+  "converted": {
+    "WS10": {
+      "code": "WS10",
+      "original_unit": "EA",
+      "original_quantity": 21.0,
+      "correct_unit": "LF",
+      "converted_quantity": 336.0,
+      "reasoning": "Repointing is measured in linear feet of joint. Each lintel location includes the horizontal joint at the lintel (~4 LF for a typical window width) plus three courses of brick joint above the lintel (~3 x 4 = 12 LF), totaling roughly 16 LF per lintel. 21 lintels x 16 LF \u2248 336 LF."
+    },
+    "WS12": {
+      "code": "WS12",
+      "original_unit": "EA",
+      "original_quantity": 2.0,
+      "correct_unit": "LF",
+      "converted_quantity": 12.0,
+      "reasoning": "Painting a steel lintel is measured by linear feet along its length. Typical lintels over window/door openings span about 6 LF each; 2 instances \u00d7 6 LF \u2248 12 LF."
+    }
+  }
+}

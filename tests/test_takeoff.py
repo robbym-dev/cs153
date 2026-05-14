@@ -1,14 +1,18 @@
-"""Tests for the keynote-description quantity parser in bid_engine.takeoff.
+"""Tests for the keynote-description quantity parser and the sliding-window
+quadrant cropper in bid_engine.takeoff.
 
-The four parametrized cases mirror the actual keynote patterns observed on
-page 8 (A-300) of the Park Avenue original drawings.
+The four parametrized parser cases mirror the actual keynote patterns observed
+on page 8 (A-300) of the Park Avenue original drawings.
 """
 
 from __future__ import annotations
 
-import pytest
+import io
 
-from bid_engine.takeoff import ParsedQuantity, parse_keynote_quantities
+import pytest
+from PIL import Image
+
+from bid_engine.takeoff import ParsedQuantity, crop_quadrants, parse_keynote_quantities
 
 
 # ---------------------------------------------------------------------------
@@ -136,3 +140,40 @@ def test_noun_to_unit_mapping(noun, expected_unit):
     desc = f"DO WORK (QUANTITY: ONE (1) {noun})."
     results = parse_keynote_quantities("X1", desc)
     assert results[0].unit == expected_unit
+
+
+# ---------------------------------------------------------------------------
+# Sliding-window quadrant cropper
+# ---------------------------------------------------------------------------
+
+
+def _make_png(width: int, height: int) -> bytes:
+    img = Image.new("RGB", (width, height), color=(255, 255, 255))
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue()
+
+
+def test_crop_quadrants_returns_four_named_quadrants():
+    png = _make_png(800, 600)
+    out = crop_quadrants(png)
+    assert set(out.keys()) == {"TL", "TR", "BL", "BR"}
+
+
+def test_crop_quadrants_each_quarter_size():
+    png = _make_png(800, 600)
+    out = crop_quadrants(png)
+    for name, q_bytes in out.items():
+        q = Image.open(io.BytesIO(q_bytes))
+        assert q.size == (400, 300), f"{name}: got {q.size}"
+
+
+def test_crop_quadrants_handles_odd_dimensions():
+    """Odd width/height should round down on the midline; no off-by-one error."""
+    png = _make_png(801, 601)
+    out = crop_quadrants(png)
+    tl = Image.open(io.BytesIO(out["TL"]))
+    br = Image.open(io.BytesIO(out["BR"]))
+    # TL gets floor(w/2)=400, BR gets ceil(w/2)=401. Both quadrants cover full image.
+    assert tl.size[0] + br.size[0] == 801
+    assert tl.size[1] + br.size[1] == 601

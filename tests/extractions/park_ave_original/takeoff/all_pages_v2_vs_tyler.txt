@@ -1,0 +1,64 @@
+====================================================================================================
+MULTI-PAGE TAKEOFF — PA ORIGINAL DRAWINGS vs TYLER
+====================================================================================================
+
+Pages aggregated: [7, 8, 9, 10]
+Keynote records across pages: p7=24, p8=19, p9=19, p10=19
+Per-page scale: p7=1/2" = 1'-0", p8=1/8" = 1'-0", p9=1/8" = 1'-0", p10=1/8" = 1'-0"
+
+Parsed records (deduped across 4 pages): 5
+Probed (code,unit) totals (summed across pages):   26
+
+M CODE   UNIT     ENGINE     TYLER         Δ      Δ%  SOURCE
+----------------------------------------------------------------------------------------------------
+✓ R1     EA         2.00      2.00     +0.00   +0.0%  probed
+✗ R2     EA         2.00      8.00     -6.00  -75.0%  probed
+✗ R3     EA         0.00      2.00     -2.00 -100.0%  —
+  R3     LF        17.00      0.00         —       —  probed
+✓ R4     EA         2.00      2.00     +0.00   +0.0%  probed
+✓ R5     EA         2.00      2.00     +0.00   +0.0%  probed
+✗ WS1    LF       320.00    250.01    +69.99  +28.0%  probed
+✗ WS10   LF       231.00    199.68    +31.32  +15.7%  parsed [converted from 21 EA via 4 page(s)]
+✗ WS10   SF         0.00    207.93   -207.93 -100.0%  —
+  WS11   EA         2.00      0.00         —       —  probed
+  WS12   LF        12.00      0.00         —       —  probed [converted from 2 EA via 1 page(s)]
+✗ WS12   SF         0.00      6.40     -6.40 -100.0%  —
+  WS13   EA         4.00      0.00         —       —  probed
+✗ WS13   LF         0.00     48.26    -48.26 -100.0%  —
+  WS14   EA         2.00      0.00         —       —  probed
+✗ WS14   SF         0.00     16.68    -16.68 -100.0%  —
+  WS15   LF        12.00      0.00         —       —  parsed [converted from 2 EA via 3 page(s)]
+✗ WS15   SF         0.00    126.73   -126.73 -100.0%  —
+  WS16   EA         4.00      0.00         —       —  probed
+✗ WS16   SF         0.00     26.12    -26.12 -100.0%  —
+✗ WS17   LF        15.00     11.24     +3.76  +33.5%  probed
+✗ WS18   SF       300.00     53.14   +246.86 +464.5%  probed [converted from 1 EA via 1 page(s)] + probed
+✗ WS19   LF        63.00    130.61    -67.61  -51.8%  probed [converted from 9 EA via 1 page(s)]
+✗ WS2    LF        30.00     80.60    -50.60  -62.8%  probed [converted from 2 EA via 1 page(s)]
+✓ WS3    LF        47.00     55.11     -8.11  -14.7%  probed
+✗ WS4    LF       230.00    506.34   -276.34  -54.6%  probed
+✗ WS5    EA         2.00     23.00    -21.00  -91.3%  probed
+  WS6    LF        60.00      0.00         —       —  probed [converted from 1 EA via 1 page(s)]
+✗ WS6    SF         0.00     29.95    -29.95 -100.0%  —
+✓ WS7    EA         8.00      7.00     +1.00  +14.3%  parsed
+✓ WS8    LF       100.00    114.00    -14.00  -12.3%  parsed
+✗ WS9    LF       166.00    210.54    -44.54  -21.2%  probed
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+  Same-unit comparable codes:           24
+  Within ±15% of Tyler:                  6/24 (25%)
+  Aggregate sum (same-unit comparable): engine=1520.0  tyler=2119.3  delta=-599.3 (-28.3%)
+
+Parsed alternate-bid quantities (not summed into base totals):
+  WS10   alternate_2        4.00 EA   (pages [7, 8, 9, 10])
+
+Unit conversions applied (12 record(s) across pages):
+  WS10    21.0 EA →  336.00 LF  Repointing is measured in linear feet of joint. Each lintel location i
+  WS12     2.0 EA →   12.00 LF  Painting a steel lintel is measured by linear feet along its length. T
+  WS15     2.0 EA →   12.00 LF  Lintel repair work (remove loose brick, scrape/prime/paint steel linte
+  WS2      2.0 EA →   30.00 LF  Cast stone window trim is measured by linear foot along the perimeter 
+  WS6      1.0 EA →   60.00 LF  Cleaning and sealing stonework above doors follows the linear joint ab
+  WS18     1.0 EA →  300.00 SF  Brick removal and replacement is area work measured in square feet. Fo
+  WS19     9.0 EA →   63.00 LF  Repointing vertical joints and outer head joints of a brick arch is me

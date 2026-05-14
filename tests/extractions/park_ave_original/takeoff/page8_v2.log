@@ -1,0 +1,146 @@
+INFO bid_engine.extraction: page is 42.0" long edge; clamping DPI 300 → 190 to stay under 8000-px limit
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2a (scale) → 1/8" = 1'-0"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2c (keynotes) → 19 codes
+/Users/robbymanihani/Documents/cs153-project/bid-engine/.venv/lib/python3.13/site-packages/PIL/Image.py:3574: DecompressionBombWarning: Image size (113400000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+INFO __main__: sliding window: rendered at 300 DPI, 4 quadrants
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS7: parser found 1 record(s)
+INFO __main__:   WS8: parser found 1 record(s)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS10: parser found 2 record(s)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS15: parser found 1 record(s)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: unit conversion: evaluating 19 candidate(s)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS7: model agrees EA is correct
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS10: EA → LF (21.00 → 126.00)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS15: EA → LF (2.00 → 12.00)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS2: EA → LF (2.00 → 30.00)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS5: model agrees EA is correct
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS6: EA → LF (1.00 → 60.00)
+
+===== SCALE =====
+{
+  "raw": "1/8\" = 1'-0\"",
+  "drawing_inches": 0.125,
+  "real_feet": 1.0,
+  "notes": "All four exterior elevations are at 1/8\" = 1'-0\"; title block shows 'AS NOTED'."
+}
+
+===== KEYNOTES (19) =====
+  WS1      CLEAN CAST STONE BANDS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS.
+  WS2      REMOVE AND REPLACE CAST STONE WINDOW TRIM. SEE DETAIL 7/A702.
+  WS3      CLEAN CAST STONE WINDOW HEADS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINT
+  WS4      CLEAN CAST STONE SILLS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS.
+  WS5      REFASTEN LOOSE GRILLE.
+  WS6      STONEWORK ABOVE DOORS TO BE RECAULKED BY DISTRICT, N.I.C. CONTRACTOR TO CLEAN AN
+  WS7      PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS).
+  WS8      RAKE OUT AND REPOINT BRICK MORTAR JOINTS IN DELINEATED AREAS (±100 LF). SEE DETA
+  WS9      CONTRACTOR TO REMOVE EXISTING CAULK AND RECAULK EXPANSION JOINTS.
+  WS10     REPOINT HORIZONTAL JOINT AT LINTELS BETWEEN WINDOWS AND AT CORNERS. AT SINGLE WI
+  WS11     INSTALL NEW FRP DOOR, ALUMINUM THERMALLY BROKEN DOOR FRAME, AND REINSTALL EXISTI
+  WS12     SCRAPE, WIRE BRUSH, PRIME AND PAINT EXISTING STEEL LINTEL. COLOR TO MATCH EXISTI
+  WS13     INSTALL STEEL TUBING AND BEAM AROUND DOOR OPENING TO REINFORCE EXISTING LINTEL.
+  WS14     TEMPORARILY REMOVE EXISTING/DISPLACED MASONRY AROUND DOOR AND RESET AFTER STEEL 
+  WS15     REMOVE LOOSE BRICK AROUND LINTEL. SCRAPE, WIRE BRUSH, PRIME AND PAINT ALL EXPOSE
+  WS16     REPAIR CRACKED BRICK. SEE DETAIL 2/A430 (TYP).
+  WS17     REFASTEN LOOSE FASCIA COVER.
+  WS18     REMOVE AND DISPOSE OF BRICK IN AREAS NOTED. INSTALL NEW BRICK, MATCHING EXISTING
+  WS19     REPOINT VERTICAL JOINTS AND OUTER HEAD JOINT OF BRICK ARCH.
+
+===== PARSED (5) =====
+  WS10      21.00 EA   (base_bid)
+  WS10       4.00 EA   (alternate_2)
+  WS15       2.00 EA   (base_bid)
+  WS7        8.00 EA   (base_bid)
+  WS8      100.00 LF   (base_bid)
+
+===== PROBED (15) =====
+  WS1      320.00 LF   (callouts=8)  TL: cc=2 qty=110 LF | TR: cc=2 qty=80 LF | BL: cc=2 qty=50 LF | BR: cc=2 qty=80 
+  WS11       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS12       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS13       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS14       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS16       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS17       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS18       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS19       0.00 EA   (callouts=0)  no callouts in any quadrant
+  WS2        2.00 EA   (callouts=2)  TL: cc=2 qty=2 EA
+  WS3       47.00 LF   (callouts=2)  TL: cc=1 qty=12 LF | TR: cc=1 qty=35 LF
+  WS4      226.00 LF   (callouts=28)  TL: cc=4 qty=96 LF | TR: cc=6 qty=70 LF | BL: cc=10 qty=10 EA | BR: cc=8 qty=60 
+  WS5        2.00 EA   (callouts=2)  TL: cc=1 qty=1 EA | TR: cc=1 qty=1 EA
+  WS6        1.00 EA   (callouts=1)  BL: cc=1 qty=1 EA
+  WS9        0.00 EA   (callouts=0)  no callouts in any quadrant
+
+===== UNIT CONVERSIONS (4) =====
+  WS10     21.0 EA →   126.00 LF   Repointing horizontal mortar joints is measured in linear feet along the joint l
+  WS15      2.0 EA →    12.00 LF   Lintel repair work (remove loose brick, scrape/prime/paint steel lintel, install
+  WS2       2.0 EA →    30.00 LF   Cast stone window trim is measured by linear foot along the perimeter of the win
+  WS6       1.0 EA →    60.00 LF   Cleaning and sealing stonework above doors follows the linear joint above each d
+
+Wrote JSON: tests/extractions/park_ave_original/takeoff/page8_v2.json
