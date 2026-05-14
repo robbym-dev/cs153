@@ -1,0 +1,744 @@
+{
+  "page": 8,
+  "dpi": 600,
+  "crop_half_pt": 60,
+  "crop_source": "single full-page raster",
+  "results": [
+    {
+      "raw": "TYP",
+      "code": null,
+      "error": null,
+      "cx": 1502.4600830078125,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "A430",
+      "code": "A430",
+      "error": null,
+      "cx": 1468.9801025390625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "R2",
+      "code": "R2",
+      "error": null,
+      "cx": 1436.340087890625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1408.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "There is no circle visible in the image, and no keynote code is shown. I can only see fragments of text referencing details \"2/A430\" and \"1/A430\".",
+      "code": "A430",
+      "error": null,
+      "cx": 1380.1800537109375,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle in this image \u2014 it shows fragments of construction notes text. No keynote code in a circle is visible.",
+      "code": null,
+      "error": null,
+      "cx": 1348.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in this image. The image shows text fragments about brick repair and fascia work, but no circled code is visible.",
+      "code": null,
+      "error": null,
+      "cx": 1315.5,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in the image. The image shows only text describing repair instructions (repair cracked brick, refasten loose fascia, remove",
+      "code": null,
+      "error": null,
+      "cx": 1287.9000244140625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS16",
+      "code": "WS16",
+      "error": null,
+      "cx": 1255.1400146484375,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS16",
+      "code": "WS16",
+      "error": null,
+      "cx": 1210.739990234375,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS16",
+      "code": "WS16",
+      "error": null,
+      "cx": 1168.5,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image. The image appears to be mostly blank with just a few horizontal lines/bars at the bottom.",
+      "code": null,
+      "error": null,
+      "cx": 1125.1800537109375,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1097.340087890625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in this image.",
+      "code": null,
+      "error": null,
+      "cx": 1069.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "There is no circle or keynote code visible in this image.",
+      "code": null,
+      "error": null,
+      "cx": 1031.10009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 994.1400146484375,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS1",
+      "code": "WS1",
+      "error": null,
+      "cx": 965.4600219726562,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS1",
+      "code": "WS1",
+      "error": null,
+      "cx": 937.3800659179688,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS1",
+      "code": "WS1",
+      "error": null,
+      "cx": 908.8200073242188,
+      "cy": 1209.7799072265625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1887.1800537109375,
+      "cy": 1313.0999755859375,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1277.10009765625,
+      "cy": 584.579833984375,
+      "in_legend": false
+    },
+    {
+      "raw": "R2",
+      "code": "R2",
+      "error": null,
+      "cx": 1277.10009765625,
+      "cy": 918.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS4",
+      "code": "WS4",
+      "error": null,
+      "cx": 1156.8599853515625,
+      "cy": 760.619873046875,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white. There is no keynote code I can read.",
+      "code": null,
+      "error": null,
+      "cx": 1057.739990234375,
+      "cy": 731.4599609375,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in this image.",
+      "code": null,
+      "error": null,
+      "cx": 1057.739990234375,
+      "cy": 927.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't see any code or content in the image\u2014it appears to be a blank white image with no visible circle or text.",
+      "code": null,
+      "error": null,
+      "cx": 1771.1400146484375,
+      "cy": 676.260009765625,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't see any code or content in the image\u2014it appears to be blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1786.860107421875,
+      "cy": 2035.739990234375,
+      "in_legend": false
+    },
+    {
+      "raw": "16'",
+      "code": null,
+      "error": null,
+      "cx": 1109.4600830078125,
+      "cy": 593.4599609375,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be blank with only a few faint horizontal lines.",
+      "code": null,
+      "error": null,
+      "cx": 1109.4600830078125,
+      "cy": 927.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or code in the image \u2014 it appears blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1109.4600830078125,
+      "cy": 2196.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be blank/white with only a few faint horizontal lines. I cannot return a code that isn't there",
+      "code": null,
+      "error": null,
+      "cx": 1109.4600830078125,
+      "cy": 1863.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or code in this image\u2014it appears to be blank/white with only faint horizontal lines. I cannot return a code that isn't there.",
+      "code": null,
+      "error": null,
+      "cx": 1277.10009765625,
+      "cy": 1854.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or code in the image you provided \u2014 it appears to be blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1277.10009765625,
+      "cy": 2187.89990234375,
+      "in_legend": false
+    },
+    {
+      "raw": "16'",
+      "code": null,
+      "error": null,
+      "cx": 1156.8599853515625,
+      "cy": 2030.3399658203125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1057.739990234375,
+      "cy": 2001.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "R2",
+      "code": "R2",
+      "error": null,
+      "cx": 998.1000366210938,
+      "cy": 610.739990234375,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in this image. The image shows a title block reading \"EXTERIOR\" with \"SCALE: 1/8\" = 1",
+      "code": null,
+      "error": null,
+      "cx": 511.7400360107422,
+      "cy": 1990.02001953125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS8",
+      "code": "WS8",
+      "error": null,
+      "cx": 626.5800170898438,
+      "cy": 877.3798828125,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code or text inside a circle in this image. The image appears mostly blank with a vertical line and a partial curved mark in the lower right.",
+      "code": null,
+      "error": null,
+      "cx": 511.7400360107422,
+      "cy": 853.3798828125,
+      "in_legend": false
+    },
+    {
+      "raw": "N/A",
+      "code": null,
+      "error": null,
+      "cx": 580.9800415039062,
+      "cy": 598.85986328125,
+      "in_legend": false
+    },
+    {
+      "raw": "1",
+      "code": null,
+      "error": null,
+      "cx": 466.9800109863281,
+      "cy": 598.85986328125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS10",
+      "code": "WS10",
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 1176.0599365234375,
+      "in_legend": true
+    },
+    {
+      "raw": "",
+      "code": null,
+      "error": "off-page",
+      "cx": 580.9800415039062,
+      "cy": 2248.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "",
+      "code": null,
+      "error": "off-page",
+      "cx": 459.4200134277344,
+      "cy": 2290.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't make out any code in the image\u2014it appears blank/white with no visible circle or text.",
+      "code": null,
+      "error": null,
+      "cx": 406.1400146484375,
+      "cy": 749.33984375,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 519.300048828125,
+      "cy": 1009.2598876953125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS8",
+      "code": "WS8",
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 1622.93994140625,
+      "in_legend": true
+    },
+    {
+      "raw": "",
+      "code": null,
+      "error": "off-page",
+      "cx": 358.3800048828125,
+      "cy": 2290.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS1",
+      "code": "WS1",
+      "error": null,
+      "cx": 523.1400146484375,
+      "cy": 1143.89990234375,
+      "in_legend": false
+    },
+    {
+      "raw": "Unable to determine.",
+      "code": null,
+      "error": null,
+      "cx": 580.9800415039062,
+      "cy": 634.85986328125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 994.4998779296875,
+      "in_legend": true
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white. There is nothing for me to read.",
+      "code": null,
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 1379.699951171875,
+      "in_legend": true
+    },
+    {
+      "raw": "I can't see any code in the image\u2014it appears to be blank/white with no visible circle or text.",
+      "code": null,
+      "error": null,
+      "cx": 1916.580078125,
+      "cy": 797.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1801.7401123046875,
+      "cy": 797.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image\u2014it appears to be entirely blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1731.6600341796875,
+      "cy": 797.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see a circle with a keynote code in this image. The visible text appears to be partial text reading \"R ELEVAT\" (likely part of \"ELEVAT",
+      "code": null,
+      "error": null,
+      "cx": 2013.06005859375,
+      "cy": 1351.739990234375,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be essentially blank with only a few faint horizontal lines. I can't return a code that isn't there",
+      "code": null,
+      "error": null,
+      "cx": 1731.6600341796875,
+      "cy": 1072.4998779296875,
+      "in_legend": false
+    },
+    {
+      "raw": "W5",
+      "code": "W5",
+      "error": null,
+      "cx": 1801.7401123046875,
+      "cy": 1072.4998779296875,
+      "in_legend": false
+    },
+    {
+      "raw": "WS4",
+      "code": "WS4",
+      "error": null,
+      "cx": 1916.580078125,
+      "cy": 1072.4998779296875,
+      "in_legend": false
+    },
+    {
+      "raw": "WS4",
+      "code": "WS4",
+      "error": null,
+      "cx": 1879.1400146484375,
+      "cy": 1072.4998779296875,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1731.6600341796875,
+      "cy": 1771.5,
+      "in_legend": false
+    },
+    {
+      "raw": "There is no circle with a keynote code in this image. The only text visible is \"RESCUE WINDOW\" inside a rectangular label.",
+      "code": null,
+      "error": null,
+      "cx": 1801.7401123046875,
+      "cy": 1771.5,
+      "in_legend": false
+    },
+    {
+      "raw": "WS1",
+      "code": "WS1",
+      "error": null,
+      "cx": 1916.580078125,
+      "cy": 1771.5,
+      "in_legend": false
+    },
+    {
+      "raw": "RESCUE WINDOW",
+      "code": null,
+      "error": null,
+      "cx": 1879.1400146484375,
+      "cy": 1771.5,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't make out any code in the image \u2014 it appears blank/white with no visible text or circle.",
+      "code": null,
+      "error": null,
+      "cx": 1916.580078125,
+      "cy": 2047.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't see any code or content in the image \u2014 it appears to be blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 1731.6600341796875,
+      "cy": 2047.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white. There's no keynote code I can read.",
+      "code": null,
+      "error": null,
+      "cx": 1827.4200439453125,
+      "cy": 2047.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 1011.6600341796875,
+      "cy": 927.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "O",
+      "code": null,
+      "error": null,
+      "cx": 1011.6600341796875,
+      "cy": 557.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "There is no visible circle with a keynote code in the image provided.",
+      "code": null,
+      "error": null,
+      "cx": 1057.739990234375,
+      "cy": 848.4599609375,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be a mostly blank white image with a single horizontal black bar across the middle. There is no code I can",
+      "code": null,
+      "error": null,
+      "cx": 1057.739990234375,
+      "cy": 2117.4599609375,
+      "in_legend": false
+    },
+    {
+      "raw": "The image appears to be blank/white \u2014 I cannot see any circle or code.",
+      "code": null,
+      "error": null,
+      "cx": 1011.6600341796875,
+      "cy": 2196.179931640625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any circle or keynote code in this image \u2014 it appears to be mostly blank with a few faint horizontal lines.",
+      "code": null,
+      "error": null,
+      "cx": 1011.6600341796875,
+      "cy": 1826.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "0",
+      "code": null,
+      "error": null,
+      "cx": 978.6600341796875,
+      "cy": 1901.4599609375,
+      "in_legend": false
+    },
+    {
+      "raw": "I cannot see any code or content in the image \u2014 it appears to be blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 721.739990234375,
+      "in_legend": true
+    },
+    {
+      "raw": "I don't see any circle or keynote code in the image you've shared \u2014 it appears to be blank/white. Could you re-upload the image?",
+      "code": null,
+      "error": null,
+      "cx": 328.1400146484375,
+      "cy": 2207.219970703125,
+      "in_legend": false
+    },
+    {
+      "raw": "LEVATION is not a code. Based on the visible text, I cannot identify a keynote code like WS5 or R2 in the image.",
+      "code": "R2",
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 1990.02001953125,
+      "in_legend": true
+    },
+    {
+      "raw": "R2",
+      "code": "R2",
+      "error": null,
+      "cx": 662.5800170898438,
+      "cy": 835.739990234375,
+      "in_legend": true
+    },
+    {
+      "raw": "1",
+      "code": null,
+      "error": null,
+      "cx": 489.5400085449219,
+      "cy": 548.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "1",
+      "code": null,
+      "error": null,
+      "cx": 375.5400085449219,
+      "cy": 548.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 535.1400146484375,
+      "cy": 817.260009765625,
+      "in_legend": false
+    },
+    {
+      "raw": "I don't see any code, circle, or visible content in this image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 420.4200134277344,
+      "cy": 817.260009765625,
+      "in_legend": false
+    },
+    {
+      "raw": "WS8",
+      "code": "WS8",
+      "error": null,
+      "cx": 535.1400146484375,
+      "cy": 910.3798828125,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't see any code or content in the image \u2014 it appears to be entirely blank/white.",
+      "code": null,
+      "error": null,
+      "cx": 420.4200134277344,
+      "cy": 910.3798828125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 511.3800506591797,
+      "cy": 1379.699951171875,
+      "in_legend": false
+    },
+    {
+      "raw": "WS4",
+      "code": "WS4",
+      "error": null,
+      "cx": 511.3800506591797,
+      "cy": 1622.93994140625,
+      "in_legend": false
+    },
+    {
+      "raw": "",
+      "code": null,
+      "error": "off-page",
+      "cx": 405.1800231933594,
+      "cy": 2290.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "",
+      "code": null,
+      "error": "off-page",
+      "cx": 519.1799926757812,
+      "cy": 2290.139892578125,
+      "in_legend": false
+    },
+    {
+      "raw": "WS5",
+      "code": "WS5",
+      "error": null,
+      "cx": 450.0600280761719,
+      "cy": 2038.97998046875,
+      "in_legend": false
+    },
+    {
+      "raw": "I can't see any code or content in the image\u2014it appears to be blank/white. Please share a clearer image.",
+      "code": null,
+      "error": null,
+      "cx": 564.780029296875,
+      "cy": 2038.97998046875,
+      "in_legend": false
+    },
+    {
+      "raw": "4",
+      "code": null,
+      "error": null,
+      "cx": 450.0600280761719,
+      "cy": 1957.8599853515625,
+      "in_legend": false
+    },
+    {
+      "raw": "There is no circle or keynote code visible in this image. The image shows partial text reading \"ERIOR ELE\" (likely \"EXTERIOR ELEV",
+      "code": null,
+      "error": null,
+      "cx": 564.780029296875,
+      "cy": 1957.8599853515625,
+      "in_legend": false
+    }
+  ]
+}
