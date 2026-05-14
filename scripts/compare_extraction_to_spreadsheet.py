@@ -1,11 +1,15 @@
-"""Compare AI-extracted sidebar quantities to Tyler's bid spreadsheet.
+"""Compare AI-extracted quantities to a reference bid spreadsheet.
 
-Aggregates by (code, unit) since the same code can appear on multiple
-elevations / locations within one page and across pages. Pages 5 and 6 are
-loaded; pages 7 and 8 produced byte-identical output to 5 and 6 and are
-excluded as duplicates.
+Aggregates extracted items by (code, unit) and diffs against the same key in
+the spreadsheet's DETAIL sheet. By default points at the Park Avenue
+marked-up baseline (the original validation run). Pass --extractions DIR to
+compare a different extraction set against the same spreadsheet — e.g. the
+raw-plan extraction in tests/extractions/park_ave_original/.
 """
 
+from __future__ import annotations
+
+import argparse
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -13,14 +17,16 @@ from pathlib import Path
 import openpyxl
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-EXTRACTION_FILES = {
-    2: PROJECT_ROOT / "tests" / "extractions" / "page2.txt",
-    3: PROJECT_ROOT / "tests" / "extractions" / "page3.txt",
-    5: PROJECT_ROOT / "tests" / "baseline_page5.txt",
-    6: PROJECT_ROOT / "tests" / "extractions" / "page6.txt",
-}
-SPREADSHEET = PROJECT_ROOT / "test_data" / "Park_Avenue_Elementary_School.xlsx"
-TOLERANCE = 0.05  # per spec — quantities matched within 0.05 in manual validation
+
+# Default extraction set: the Park Avenue marked-up baseline.
+DEFAULT_EXTRACTION_FILES = (
+    PROJECT_ROOT / "tests" / "extractions" / "page2.txt",
+    PROJECT_ROOT / "tests" / "extractions" / "page3.txt",
+    PROJECT_ROOT / "tests" / "baseline_page5.txt",
+    PROJECT_ROOT / "tests" / "extractions" / "page6.txt",
+)
+DEFAULT_SPREADSHEET = PROJECT_ROOT / "test_data" / "Park_Avenue_Elementary_School.xlsx"
+TOLERANCE = 0.05
 
 CODE_RE = re.compile(r"^([A-Z]+\d+)\s*:")
 
@@ -36,29 +42,37 @@ def normalize_unit(u: str) -> str:
     return u
 
 
-def load_extraction() -> dict:
-    totals = defaultdict(float)
+def load_extraction(paths) -> dict:
+    totals: dict = defaultdict(float)
     rows = 0
-    for path in EXTRACTION_FILES.values():
-        with open(path) as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                parts = line.split("\t")
-                if len(parts) != 3:
-                    continue
-                code, qty, unit = parts
-                totals[(code.strip(), normalize_unit(unit))] += float(qty)
-                rows += 1
-    print(f"  loaded {rows} rows across {len(EXTRACTION_FILES)} deduped pages")
+    for path in paths:
+        try:
+            content = Path(path).read_text()
+        except OSError as exc:
+            print(f"  warning: could not read {path}: {exc}")
+            continue
+        for line in content.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            parts = line.split("\t")
+            if len(parts) != 3:
+                continue
+            code, qty_s, unit = parts
+            try:
+                qty = float(qty_s)
+            except ValueError:
+                continue
+            totals[(code.strip(), normalize_unit(unit))] += qty
+            rows += 1
+    print(f"  loaded {rows} rows across {len(list(paths))} file(s)")
     return dict(totals)
 
 
-def load_spreadsheet() -> dict:
-    wb = openpyxl.load_workbook(SPREADSHEET, data_only=True)
+def load_spreadsheet(path: Path) -> dict:
+    wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb["DETAIL"]
-    totals = defaultdict(float)
+    totals: dict = defaultdict(float)
     rows = 0
     for r in range(28, ws.max_row + 1):
         item_num = ws.cell(r, 1).value
@@ -84,11 +98,42 @@ def load_spreadsheet() -> dict:
     return dict(totals)
 
 
-def main() -> None:
-    print("Loading extractions...")
-    extr = load_extraction()
-    print("Loading spreadsheet...")
-    sheet = load_spreadsheet()
+def _resolve_paths(extractions_arg: str | None) -> tuple[Path, ...]:
+    if not extractions_arg:
+        return DEFAULT_EXTRACTION_FILES
+    target = Path(extractions_arg)
+    if not target.exists():
+        raise FileNotFoundError(f"--extractions path does not exist: {target}")
+    if target.is_dir():
+        files = tuple(sorted(target.glob("page*.txt")))
+        if not files:
+            raise FileNotFoundError(f"no page*.txt files in {target}")
+        return files
+    return (target,)
+
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument(
+        "--extractions",
+        help="directory of page*.txt extraction files, or a single file "
+             "(default: the marked-up Park Avenue baseline)",
+    )
+    p.add_argument(
+        "--spreadsheet",
+        default=str(DEFAULT_SPREADSHEET),
+        help=f"path to the reference bid .xlsx (default: {DEFAULT_SPREADSHEET.name})",
+    )
+    p.add_argument("--label", default="extraction", help="label for the extraction side")
+    args = p.parse_args(argv)
+
+    paths = _resolve_paths(args.extractions)
+    print(f"Loading {args.label}...")
+    for path in paths:
+        print(f"  {path}")
+    extr = load_extraction(paths)
+    print(f"Loading spreadsheet: {args.spreadsheet}")
+    sheet = load_spreadsheet(Path(args.spreadsheet))
 
     extr_keys = set(extr.keys())
     sheet_keys = set(sheet.keys())
@@ -133,7 +178,7 @@ def main() -> None:
     extr_total = sum(extr.values())
     sheet_total = sum(sheet.values())
 
-    print(f"\n{line}\nSUMMARY")
+    print(f"\n{line}\nSUMMARY ({args.label})")
     print(
         f"  unique (code, unit) keys:  extracted={len(extr_keys)}  "
         f"spreadsheet={len(sheet_keys)}  union={total_keys}"
@@ -150,7 +195,8 @@ def main() -> None:
         f"  aggregate quantity sum:  extracted={extr_total:.1f}  "
         f"spreadsheet={sheet_total:.1f}  delta={extr_total - sheet_total:+.1f}"
     )
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
