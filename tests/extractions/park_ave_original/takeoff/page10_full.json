@@ -1,0 +1,240 @@
+{
+  "page": 10,
+  "scale": {
+    "raw": "1/8\" = 1'-0\"",
+    "drawing_inches": 0.125,
+    "real_feet": 1.0,
+    "notes": "Scale printed under each of the three partial elevations (10, 11, 12); all at same scale."
+  },
+  "dimensions": [],
+  "keynotes": [
+    {
+      "code": "WS1",
+      "description": "CLEAN CAST STONE BANDS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS2",
+      "description": "REMOVE AND REPLACE CAST STONE WINDOW TRIM. SEE DETAIL 7/A702."
+    },
+    {
+      "code": "WS3",
+      "description": "CLEAN CAST STONE WINDOW HEADS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS4",
+      "description": "CLEAN CAST STONE SILLS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+    },
+    {
+      "code": "WS5",
+      "description": "REFASTEN LOOSE GRILLE."
+    },
+    {
+      "code": "WS6",
+      "description": "STONEWORK ABOVE DOORS TO BE RECAULKED BY DISTRICT, N.I.C. CONTRACTOR TO CLEAN AND SEAL AFTER RECAULKING IS COMPLETE."
+    },
+    {
+      "code": "WS7",
+      "description": "PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS)."
+    },
+    {
+      "code": "WS8",
+      "description": "RAKE OUT AND REPOINT BRICK MORTAR JOINTS IN DELINEATED AREAS (\u00b1100 LF). SEE DETAIL 3/A430 (TYP)."
+    },
+    {
+      "code": "WS9",
+      "description": "CONTRACTOR TO REMOVE EXISTING CAULK AND RECAULK EXPANSION JOINTS."
+    },
+    {
+      "code": "WS10",
+      "description": "REPOINT HORIZONTAL JOINT AT LINTELS BETWEEN WINDOWS AND AT CORNERS. AT SINGLE WINDOWS, REPOINT HORIZONTAL JOINT AT WINDOW CORNERS. REPOINT THREE COURSES OF BRICK ABOVE LINTEL. (BASE BID QUANTITY: TWENTY-ONE (21) LINTELS, ALTERNATE 2 QUANTITY: FOUR (4) LINTELS)."
+    },
+    {
+      "code": "WS11",
+      "description": "INSTALL NEW FRP DOOR, ALUMINUM THERMALLY BROKEN DOOR FRAME, AND REINSTALL EXISTING DOOR HARDWARE. DOOR FRP COLOR TO MATCH ONE STORY BUILDING. SEE DOOR DETAILS & SCHEDULE. CONTRACTOR IS RESPONSIBLE FOR BUILDING SECURITY WHILE DOORS ARE BEING REPLACED."
+    },
+    {
+      "code": "WS12",
+      "description": "SCRAPE, WIRE BRUSH, PRIME AND PAINT EXISTING STEEL LINTEL. COLOR TO MATCH EXISTING PRECAST UNITS."
+    },
+    {
+      "code": "WS13",
+      "description": "INSTALL STEEL TUBING AND BEAM AROUND DOOR OPENING TO REINFORCE EXISTING LINTEL."
+    },
+    {
+      "code": "WS14",
+      "description": "TEMPORARILY REMOVE EXISTING/DISPLACED MASONRY AROUND DOOR AND RESET AFTER STEEL TUBING IS IN PLACE."
+    },
+    {
+      "code": "WS15",
+      "description": "REMOVE LOOSE BRICK AROUND LINTEL. SCRAPE, WIRE BRUSH, PRIME AND PAINT ALL EXPOSED PORTIONS OF STEEL LINTEL. INSTALL NEW FLASHING AND BRICK VENEER (QUANTITY: TWO (2) LINTELS). CONTRACTOR TO WORK IN A MANNER WHICH PROVIDES CONTINUOUS SUPPORT TO MASONRY ABOVE. SEE DETAIL 5/A701."
+    },
+    {
+      "code": "WS16",
+      "description": "REPAIR CRACKED BRICK. SEE DETAIL 2/A430 (TYP)."
+    },
+    {
+      "code": "WS17",
+      "description": "REFASTEN LOOSE FASCIA COVER."
+    },
+    {
+      "code": "WS18",
+      "description": "REMOVE AND DISPOSE OF BRICK IN AREAS NOTED. INSTALL NEW BRICK, MATCHING EXISTING COLOR AND TEXTURE. SEE DETAIL 1/A430 (TYP)."
+    },
+    {
+      "code": "WS19",
+      "description": "REPOINT VERTICAL JOINTS AND OUTER HEAD JOINT OF BRICK ARCH."
+    }
+  ],
+  "parsed": {
+    "WS7": [
+      {
+        "code": "WS7",
+        "quantity": 8.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(8) BRICKS"
+      }
+    ],
+    "WS8": [
+      {
+        "code": "WS8",
+        "quantity": 100.0,
+        "unit": "LF",
+        "variant": "base_bid",
+        "raw": "\u00b1100 LF"
+      }
+    ],
+    "WS10": [
+      {
+        "code": "WS10",
+        "quantity": 21.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(21) LINTELS"
+      },
+      {
+        "code": "WS10",
+        "quantity": 4.0,
+        "unit": "EA",
+        "variant": "alternate_2",
+        "raw": "(4) LINTELS"
+      }
+    ],
+    "WS15": [
+      {
+        "code": "WS15",
+        "quantity": 2.0,
+        "unit": "EA",
+        "variant": "base_bid",
+        "raw": "(2) LINTELS"
+      }
+    ]
+  },
+  "probed": {
+    "WS1": {
+      "code": "WS1",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS1 callouts are visible on the three partial elevations (only WS8, WS16, WS17, WS18, WS19 appear)."
+    },
+    "WS2": {
+      "code": "WS2",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "Reviewed all three partial elevations (north, east, south). Visible callouts include WS6, WS8, WS16, WS17, WS18, WS19 - no WS2 callouts placed on this sheet."
+    },
+    "WS3": {
+      "code": "WS3",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS3 callouts visible on the three partial elevations (N/E/S). Visible callouts appear to be WS8, WS16, WS17, WS18, WS19."
+    },
+    "WS4": {
+      "code": "WS4",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS4 callouts visible on this elevation; only WS8, WS16, WS17, WS18, WS19 callouts are placed on the three partial elevations."
+    },
+    "WS5": {
+      "code": "WS5",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS5 callouts visible on the three partial elevations shown."
+    },
+    "WS6": {
+      "code": "WS6",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS6 callouts visible on the three partial elevations; visible callouts include WS8, WS16, WS17, WS18, WS19."
+    },
+    "WS9": {
+      "code": "WS9",
+      "quantity": 0.0,
+      "unit": "LF",
+      "callout_count": 0,
+      "notes": "No WS9 callouts visible on the three partial elevations; visible callouts are WS8, WS16, WS17, WS18, and WS19."
+    },
+    "WS11": {
+      "code": "WS11",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS11 callouts visible on this elevation sheet; visible callouts include WS8, WS16, WS17, WS18, WS19 only."
+    },
+    "WS12": {
+      "code": "WS12",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS12 callouts visible on the three partial elevations; visible callouts are WS8, WS16, WS17, WS18, WS19."
+    },
+    "WS13": {
+      "code": "WS13",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS13 callouts are visible on the three partial elevations shown on this sheet."
+    },
+    "WS14": {
+      "code": "WS14",
+      "quantity": 0.0,
+      "unit": "EA",
+      "callout_count": 0,
+      "notes": "No WS14 callouts visible on the three partial elevations shown; only WS8, WS16, WS17, WS18, WS19 are placed."
+    },
+    "WS16": {
+      "code": "WS16",
+      "quantity": 4.0,
+      "unit": "EA",
+      "callout_count": 4,
+      "notes": "WS16 'Repair Cracked Brick' is a discrete repair item (EA). Counted placed callouts: 2 on North Partial elevation, 1 on East Partial elevation, and 1 on South Partial elevation = 4 callouts, each representing one cracked brick repair location (typ.)."
+    },
+    "WS17": {
+      "code": "WS17",
+      "quantity": 1.0,
+      "unit": "EA",
+      "callout_count": 1,
+      "notes": "Found one WS17 callout on the East Partial elevation pointing to a fascia cover area. Refastening a loose fascia cover is a discrete task, counted as 1 EA."
+    },
+    "WS18": {
+      "code": "WS18",
+      "quantity": 1.0,
+      "unit": "EA",
+      "callout_count": 1,
+      "notes": "One WS18 callout visible on the East Partial elevation pointing to a discrete brick area to be removed and replaced. Brick replacement areas counted as each discrete patch."
+    },
+    "WS19": {
+      "code": "WS19",
+      "quantity": 120.0,
+      "unit": "LF",
+      "callout_count": 12,
+      "notes": "Counted ~4 WS19 callouts on North, ~2 on East, and ~6 on South elevation, each pointing to a brick arch. Arches appear to be roughly 6 ft span semicircles \u2192 arc length ~9-10 LF each; 12 arches \u00d7 ~10 LF \u2248 120 LF of vertical/head joint repointing."
+    }
+  }
+}

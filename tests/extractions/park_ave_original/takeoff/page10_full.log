@@ -1,0 +1,159 @@
+INFO bid_engine.extraction: page is 42.0" long edge; clamping DPI 300 → 190 to stay under 8000-px limit
+INFO __main__: rendered page 10 (1228 KB)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2a (scale) → 1/8" = 1'-0"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2b (dimensions) → 0 items
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2c (keynotes) → 19 codes
+INFO __main__:   WS1: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS2: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS3: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS4: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS5: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS6: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS7: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS8: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS9: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS10: parser found 2 quantity record(s) embedded in description
+INFO __main__:   WS11: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS12: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS13: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS14: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS15: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS16: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS17: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS18: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS19: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+===== SCALE =====
+{
+  "raw": "1/8\" = 1'-0\"",
+  "drawing_inches": 0.125,
+  "real_feet": 1.0,
+  "notes": "Scale printed under each of the three partial elevations (10, 11, 12); all at same scale."
+}
+
+===== DIMENSIONS (0) =====
+[]
+
+===== KEYNOTES (19) =====
+[
+  {
+    "code": "WS1",
+    "description": "CLEAN CAST STONE BANDS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+  },
+  {
+    "code": "WS2",
+    "description": "REMOVE AND REPLACE CAST STONE WINDOW TRIM. SEE DETAIL 7/A702."
+  },
+  {
+    "code": "WS3",
+    "description": "CLEAN CAST STONE WINDOW HEADS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+  },
+  {
+    "code": "WS4",
+    "description": "CLEAN CAST STONE SILLS, REPOINT AND COVER ALL HORIZONTAL & VERTICAL JOINTS."
+  },
+  {
+    "code": "WS5",
+    "description": "REFASTEN LOOSE GRILLE."
+  },
+  {
+    "code": "WS6",
+    "description": "STONEWORK ABOVE DOORS TO BE RECAULKED BY DISTRICT, N.I.C. CONTRACTOR TO CLEAN AND SEAL AFTER RECAULKING IS COMPLETE."
+  },
+  {
+    "code": "WS7",
+    "description": "PATCH HOLES IN FACE BRICK (APPROX. QUANTITY: EIGHT (8) BRICKS)."
+  },
+  {
+    "code": "WS8",
+    "description": "RAKE OUT AND REPOINT BRICK MORTAR JOINTS IN DELINEATED AREAS (\u00b1100 LF). SEE DETAIL 3/A430 (TYP)."
+  },
+  {
+    "code": "WS9",
+    "description": "CONTRACTOR TO REMOVE EXISTING CAULK AND RECAULK EXPANSION JOINTS."
+  },
+  {
+    "code": "WS10",
+    "description": "REPOINT HORIZONTAL JOINT AT LINTELS BETWEEN WINDOWS AND AT CORNERS. AT SINGLE WINDOWS, REPOINT HORIZONTAL JOINT AT WINDOW CORNERS. REPOINT THREE COURSES OF BRICK ABOVE LINTEL. (BASE BID QUANTITY: TWENTY-ONE (21) LINTELS, ALTERNATE 2 QUANTITY: FOUR (4) LINTELS)."
+  },
+  {
+    "code": "WS11",
+    "description": "INSTALL NEW FRP DOOR, ALUMINUM THERMALLY BROKEN DOOR FRAME, AND REINSTALL EXISTING DOOR HARDWARE. DOOR FRP COLOR TO MATCH ONE STORY BUILDING. SEE DOOR DETAILS & SCHEDULE. CONTRACTOR IS RESPONSIBLE FOR BUILDING SECURITY WHILE DOORS ARE BEING REPLACED."
+  },
+  {
+    "code": "WS12",
+    "description": "SCRAPE, WIRE BRUSH, PRIME AND PAINT EXISTING STEEL LINTEL. COLOR TO MATCH EXISTING PRECAST UNITS."
+  },
+  {
+    "code": "WS13",
+    "description": "INSTALL STEEL TUBING AND BEAM AROUND DOOR OPENING TO REINFORCE EXISTING LINTEL."
+  },
+  {
+    "code": "WS14",
+    "description": "TEMPORARILY REMOVE EXISTING/DISPLACED MASONRY AROUND DOOR AND RESET AFTER STEEL TUBING IS IN PLACE."
+  },
+  {
+    "code": "WS15",
+    "description": "REMOVE LOOSE BRICK AROUND LINTEL. SCRAPE, WIRE BRUSH, PRIME AND PAINT ALL EXPOSED PORTIONS OF STEEL LINTEL. INSTALL NEW FLASHING AND BRICK VENEER (QUANTITY: TWO (2) LINTELS). CONTRACTOR TO WORK IN A MANNER WHICH PROVIDES CONTINUOUS SUPPORT TO MASONRY ABOVE. SEE DETAIL 5/A701."
+  },
+  {
+    "code": "WS16",
+    "description": "REPAIR CRACKED BRICK. SEE DETAIL 2/A430 (TYP)."
+  },
+  {
+    "code": "WS17",
+    "description": "REFASTEN LOOSE FASCIA COVER."
+  },
+  {
+    "code": "WS18",
+    "description": "REMOVE AND DISPOSE OF BRICK IN AREAS NOTED. INSTALL NEW BRICK, MATCHING EXISTING COLOR AND TEXTURE. SEE DETAIL 1/A430 (TYP)."
+  },
+  {
+    "code": "WS19",
+    "description": "REPOINT VERTICAL JOINTS AND OUTER HEAD JOINT OF BRICK ARCH."
+  }
+]
+
+===== PARSED FROM DESCRIPTIONS (5) =====
+  WS10      21.00 EA   (base_bid)   raw: '(21) LINTELS'
+  WS10       4.00 EA   (alternate_2)   raw: '(4) LINTELS'
+  WS15       2.00 EA   (base_bid)   raw: '(2) LINTELS'
+  WS7        8.00 EA   (base_bid)   raw: '(8) BRICKS'
+  WS8      100.00 LF   (base_bid)   raw: '±100 LF'
+
+===== PROBED PER-CODE (15) =====
+  WS1        0.00 LF     callouts=0   No WS1 callouts are visible on the three partial elevations (only WS8, WS16, WS17, WS18, WS19 appear).
+  WS11       0.00 EA     callouts=0   No WS11 callouts visible on this elevation sheet; visible callouts include WS8, WS16, WS17, WS18, WS19 only.
+  WS12       0.00 EA     callouts=0   No WS12 callouts visible on the three partial elevations; visible callouts are WS8, WS16, WS17, WS18, WS19.
+  WS13       0.00 EA     callouts=0   No WS13 callouts are visible on the three partial elevations shown on this sheet.
+  WS14       0.00 EA     callouts=0   No WS14 callouts visible on the three partial elevations shown; only WS8, WS16, WS17, WS18, WS19 are placed.
+  WS16       4.00 EA     callouts=4   WS16 'Repair Cracked Brick' is a discrete repair item (EA). Counted placed callouts: 2 on North Partial elevation, 1 on East Partial elevation, and 1 on South Partial elevation = 4 callouts, each representing one cracked brick repair location (typ.).
+  WS17       1.00 EA     callouts=1   Found one WS17 callout on the East Partial elevation pointing to a fascia cover area. Refastening a loose fascia cover is a discrete task, counted as 1 EA.
+  WS18       1.00 EA     callouts=1   One WS18 callout visible on the East Partial elevation pointing to a discrete brick area to be removed and replaced. Brick replacement areas counted as each discrete patch.
+  WS19     120.00 LF     callouts=12   Counted ~4 WS19 callouts on North, ~2 on East, and ~6 on South elevation, each pointing to a brick arch. Arches appear to be roughly 6 ft span semicircles → arc length ~9-10 LF each; 12 arches × ~10 LF ≈ 120 LF of vertical/head joint repointing.
+  WS2        0.00 EA     callouts=0   Reviewed all three partial elevations (north, east, south). Visible callouts include WS6, WS8, WS16, WS17, WS18, WS19 - no WS2 callouts placed on this sheet.
+  WS3        0.00 LF     callouts=0   No WS3 callouts visible on the three partial elevations (N/E/S). Visible callouts appear to be WS8, WS16, WS17, WS18, WS19.
+  WS4        0.00 LF     callouts=0   No WS4 callouts visible on this elevation; only WS8, WS16, WS17, WS18, WS19 callouts are placed on the three partial elevations.
+  WS5        0.00 EA     callouts=0   No WS5 callouts visible on the three partial elevations shown.
+  WS6        0.00 EA     callouts=0   No WS6 callouts visible on the three partial elevations; visible callouts include WS8, WS16, WS17, WS18, WS19.
+  WS9        0.00 LF     callouts=0   No WS9 callouts visible on the three partial elevations; visible callouts are WS8, WS16, WS17, WS18, and WS19.
+
+Wrote JSON: tests/extractions/park_ave_original/takeoff/page10_full.json

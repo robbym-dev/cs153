@@ -1,0 +1,194 @@
+INFO bid_engine.extraction: page is 42.0" long edge; clamping DPI 300 → 190 to stay under 8000-px limit
+INFO __main__: rendered page 7 (1333 KB)
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2a (scale) → 1/2" = 1'-0"
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2b (dimensions) → 0 items
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__: step 2c (keynotes) → 24 codes
+INFO __main__:   R1: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   R2: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   R3: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   R4: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   R5: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS1: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS2: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS3: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS4: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS5: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS6: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS7: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS8: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS9: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS10: parser found 2 quantity record(s) embedded in description
+INFO __main__:   WS11: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS12: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS13: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS14: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS15: parser found 1 quantity record(s) embedded in description
+INFO __main__:   WS16: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS17: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS18: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO __main__:   WS19: no embedded quantity → step 2d probe
+INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+===== SCALE =====
+{
+  "raw": "1/2\" = 1'-0\"",
+  "drawing_inches": 0.5,
+  "real_feet": 1.0,
+  "notes": "All four partial first floor plans on this sheet are at the same scale, printed beneath each drawing title. Title block scale is 'AS NOTED'."
+}
+
+===== DIMENSIONS (0) =====
+[]
+
+===== KEYNOTES (24) =====
+[
+  {
+    "code": "R1",
+    "description": "Remove existing doors. Patch all disturbed surfaces to match existing adjacent surfaces."
+  },
+  {
+    "code": "R2",
+    "description": "Remove existing aluminum clad window(s), metal frames, transoms, hardware, saddles, side-lites, window treatments, trim, anchors, sealant, adhesives and all related items. Patch all disturbed surfaces to match existing adjacent surfaces."
+  },
+  {
+    "code": "R3",
+    "description": "Remove existing sealant, fasteners and all related items."
+  },
+  {
+    "code": "R4",
+    "description": "Contractor to perform partial removal of existing wood / hollow metal frame to determine actual field conditions and prepare shop drawings. It is the intent of this project to remove the existing frame(s)."
+  },
+  {
+    "code": "R5",
+    "description": "Remove existing hardware from existing doors (exit devices, closers, removable mullions). Reinstall all hardware on new doors. Coordinate new door and frame preparations with existing hardware."
+  },
+  {
+    "code": "WS1",
+    "description": "Clean cast stone bands, repoint and cover all horizontal & vertical joints."
+  },
+  {
+    "code": "WS2",
+    "description": "Remove and replace cast stone window trim. See detail 7/A702."
+  },
+  {
+    "code": "WS3",
+    "description": "Clean cast stone window heads, repoint and cover all horizontal & vertical joints."
+  },
+  {
+    "code": "WS4",
+    "description": "Clean cast stone sills, repoint and cover all horizontal & vertical joints."
+  },
+  {
+    "code": "WS5",
+    "description": "Refasten loose grille."
+  },
+  {
+    "code": "WS6",
+    "description": "Stonework above doors to be recaulked by district, N.I.C. Contractor to clean and seal after recaulking is complete."
+  },
+  {
+    "code": "WS7",
+    "description": "Patch holes in face brick (approx. quantity: eight (8) bricks)."
+  },
+  {
+    "code": "WS8",
+    "description": "Rake out and repoint brick mortar joints in delineated areas (\u00b1100 LF). See detail 3/A430 (typ.)."
+  },
+  {
+    "code": "WS9",
+    "description": "Contractor to remove existing caulk and recaulk expansion joints."
+  },
+  {
+    "code": "WS10",
+    "description": "Repoint horizontal joint at lintels between windows and at corners. At single windows, repoint horizontal joint at window corners, repoint three courses of brick above lintel. (Base bid quantity: twenty-one (21) lintels, alternate 2 quantity: four (4) lintels)."
+  },
+  {
+    "code": "WS11",
+    "description": "Install new FRP door, aluminum thermally broken door frame, and reinstall existing door hardware. Door FRP color to match one story building. See door details & schedule. Contractor is responsible for building security while doors are being replaced."
+  },
+  {
+    "code": "WS12",
+    "description": "Scrape, wire brush, prime and paint existing steel lintel. Color to match existing precast units."
+  },
+  {
+    "code": "WS13",
+    "description": "Install steel tubing and beam around door opening to reinforce existing lintel."
+  },
+  {
+    "code": "WS14",
+    "description": "Temporarily remove existing/displaced masonry around door and reset after steel tubing is in place."
+  },
+  {
+    "code": "WS15",
+    "description": "Remove loose brick around lintel, scrape, wire brush, prime and paint all exposed portions of steel lintel. Install new flashing and brick veneer (quantity: two (2) lintels). Contractor to work in a manner which provides continuous support to masonry above. See detail 5/A701."
+  },
+  {
+    "code": "WS16",
+    "description": "Repair cracked brick. See detail 2/A430 (typ.)."
+  },
+  {
+    "code": "WS17",
+    "description": "Refasten loose fascia cover."
+  },
+  {
+    "code": "WS18",
+    "description": "Remove and dispose of brick in areas noted. Install new brick, matching existing color and texture. See detail 1/A430 (typ.)."
+  },
+  {
+    "code": "WS19",
+    "description": "Repoint vertical joints and outer head joint of brick arch."
+  }
+]
+
+===== PARSED FROM DESCRIPTIONS (5) =====
+  WS10      21.00 EA   (base_bid)   raw: '(21) lintels'
+  WS10       4.00 EA   (alternate_2)   raw: '(4) lintels'
+  WS15       2.00 EA   (base_bid)   raw: '(2) lintels'
+  WS7        8.00 EA   (base_bid)   raw: '(8) bricks'
+  WS8      100.00 LF   (base_bid)   raw: '±100 LF'
+
+===== PROBED PER-CODE (20) =====
+  R1         4.00 EA     callouts=2   Two R1 callouts placed, one on each partial removal plan, each pointing to a pair of double doors (2 leaves each) = 4 doors total.
+  R2         2.00 EA     callouts=2   Two R2 callouts found, one on each Existing/Removals partial plan (plan 1 and plan 2), each pointing to a door assembly with aluminum clad transom/side-lites to be removed.
+  R3        40.00 LF     callouts=2   Two R3 callouts found, one in each Existing/Removals partial plan (Stair ST1.1 and Stair ST2.1 door openings). Sealant removal measured linearly around door perimeters; each double-door opening ~20 LF of sealant joints, totaling ~40 LF.
+  R4         2.00 EA     callouts=2   Two R4 callouts found, one in each 'Existing/Removals' partial floor plan (plans 1 and 2), each pointing to a door frame to be removed.
+  R5         2.00 EA     callouts=2   R5 appears twice as placed callouts, once in each 'Existing/Removals' partial plan (plans 1 and 2), each pointing to a door hardware set to be removed and reinstalled.
+  WS1        0.00 LF     callouts=0   No WS1 callouts found on this drawing. Only WS11, WS12, WS13, and WS14 callouts are visible on the partial first floor plans. WS1 (cast stone bands) appears only in the work scope notes legend.
+  WS11       2.00 EA     callouts=2   WS11 appears twice on the New Work plans (one on each partial first floor plan - new work view), each pointing to a door opening receiving a new FRP door assembly. Counted as 2 EA door installations.
+  WS12       2.00 EA     callouts=2   WS12 appears in both 'New Work' partial plans (one at each door opening), grouped with WS11/WS14 callouts. Each represents one steel lintel above a door to be scraped, primed, and painted.
+  WS13       3.00 EA     callouts=3   WS13 callouts appear on the two 'New Work' partial plans pointing to door openings where steel tubing/beam reinforcement is to be installed around the lintel. Counted 3 placed callouts (two on Plan 1 New Work at top and bottom of door opening, one on Plan 2 New Work). Since multiple callouts may reference the same opening (top/bottom of same door), this represents discrete door openings to be reinforced - measured EA.
+  WS14       2.00 EA     callouts=2   WS14 appears twice - once in each 'New Work' partial plan, each pointing to a door opening where masonry will be temporarily removed and reset around new steel tubing.
+  WS16       0.00 EA     callouts=0   No WS16 callouts found on the placed drawings; only WS11, WS12, WS13, WS14 appear in the new work plans.
+  WS17       0.00 EA     callouts=0   No WS17 callouts visible on the drawing outside the keynote legend.
+  WS18       0.00 EA     callouts=0   No WS18 callouts visible on the placed drawings; only WS11, WS12, WS13, WS14 callouts appear on the partial floor plans.
+  WS19       0.00 EA     callouts=0   No WS19 callouts found on this drawing. Visible callouts include R1-R5, WS11, WS12, WS13, WS14 only. WS19 appears only in the keynote legend.
+  WS2        0.00 LF     callouts=0   No WS2 callouts placed on this partial first floor plan; only WS11, WS12, WS13, WS14 appear on the new work plans.
+  WS3        0.00 LF     callouts=0   Reviewed both partial first floor new work plans; visible callouts include WS11, WS12, WS13, and WS14. No WS3 callouts are placed on this drawing (WS3 appears only in the work scope notes legend).
+  WS4        0.00 LF     callouts=0   No WS4 callouts are placed on this partial first floor plan drawing; WS4 only appears in the work scope notes legend.
+  WS5        0.00 EA     callouts=0   No WS5 callouts visible on this partial first floor plan drawing; WS5 appears only in the keynote legend.
+  WS6        0.00 EA     callouts=0   No WS6 callouts visible on the elevation; only WS11, WS12, WS13, WS14 and R1-R5 callouts appear on the partial floor plans.
+  WS9        0.00 LF     callouts=0   No WS9 callouts found on the placed drawings; only WS11, WS12, WS13, WS14 appear as callouts on the partial first floor new work plans.
+
+Wrote JSON: tests/extractions/park_ave_original/takeoff/page7_full.json
