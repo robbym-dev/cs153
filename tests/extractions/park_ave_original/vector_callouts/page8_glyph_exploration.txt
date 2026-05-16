@@ -1,0 +1,61 @@
+Page 8: 92 callouts, 32486 total vector paths
+
+--- circle 1: center=(1502,1210)  ---
+  prior LLM OCR: "I don't see a circle with a ke"
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1499.6, 1202.8, 1505.3, 1216.9)  5.64 x 14.16  aspect=0.4  paths= 3  l=26 c= 0  len=45.3
+
+--- circle 2: center=(1469,1210)  ---
+  prior LLM OCR: 'A430'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1466.0, 1201.9, 1471.7, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=36 c= 0  len=52.2
+
+--- circle 3: center=(1436,1210)  ---
+  prior LLM OCR: 'WS5'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1433.5, 1201.9, 1439.2, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=37 c= 0  len=52.0
+
+--- circle 4: center=(1408,1210)  ---
+  prior LLM OCR: "I don't see a circle with a ke"
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1405.4, 1201.8, 1411.1, 1217.9)  5.64 x 16.08  aspect=0.35  paths= 3  l=26 c= 0  len=52.2
+
+--- circle 5: center=(1380,1210)  ---
+  prior LLM OCR: "I don't see a circle with a ke"
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1377.4, 1201.9, 1383.0, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=39 c= 0  len=53.2
+
+--- circle 6: center=(1348,1210)  ---
+  prior LLM OCR: 'WS5'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1345.3, 1201.9, 1351.0, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=45 c= 0  len=55.5
+
+--- circle 7: center=(1316,1210)  ---
+  prior LLM OCR: 'WS5'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1312.7, 1201.9, 1318.3, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=25 c= 0  len=48.0
+
+--- circle 8: center=(1288,1210)  ---
+  prior LLM OCR: 'R2'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1285.0, 1201.9, 1290.6, 1217.8)  5.64 x 15.84  aspect=0.36  paths= 3  l=51 c= 0  len=58.3
+
+--- circle 9: center=(1255,1210)  ---
+  prior LLM OCR: 'WS16'
+  glyph paths inside: 3, clustered into 1 character group(s)
+    char 1: bbox=(1252.2, 1202.0, 1257.8, 1217.6)  5.64 x 15.6  aspect=0.36  paths= 3  l=45 c= 0  len=55.3
+
+--- circle 10: center=(1211,1210)  ---
+  prior LLM OCR: 'WS16'
+  glyph paths inside: 4, clustered into 1 character group(s)
+    char 1: bbox=(1207.9, 1199.3, 1213.6, 1220.4)  5.64 x 21.12  aspect=0.27  paths= 4  l=42 c= 0  len=60.6
+
+==============================================================================
+Aggregate stats across all 92 callouts:
+  glyph-path counts:  min=3  median=3  max=4
+  character-group counts:  {1: 92}
+
+  Char-group count distribution where LLM returned a valid code (35 circles):
+    {1: 35}
+  Char-group count distribution where LLM returned no code (57 circles):
+    {1: 57}
