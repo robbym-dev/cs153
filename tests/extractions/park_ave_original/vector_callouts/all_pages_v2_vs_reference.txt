@@ -253,7 +253,7 @@ HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
   wrote /Users/robbymanihani/Documents/cs153-project/bid-engine/tests/extractions/park_ave_original/vector_callouts/page10_ocr_v2.json
 
 ===============================================================================================
-MULTI-PAGE VECTOR-CALLOUT TAKEOFF vs TYLER
+MULTI-PAGE VECTOR-CALLOUT TAKEOFF vs REFERENCE
 ===============================================================================================
 
 Pages processed: [7, 8, 9, 10]
@@ -264,7 +264,7 @@ Pages processed: [7, 8, 9, 10]
 
 OCR valid / total: 42/214 (19.6%)
 
-CODE   PLACED LEGEND  per-page  Tyler quantities
+CODE   PLACED LEGEND  per-page  Reference quantities
 -----------------------------------------------------------------------------------------------
 A430        1      0   p7=0, p8=1, p9=0, p10=0   —
 R1          0      0   p7=0, p8=0, p9=0, p10=0   2 EA

@@ -389,14 +389,14 @@ def process_page(
 
 
 # ---------------------------------------------------------------------------
-# Tyler-spreadsheet comparison
+# Reference-spreadsheet comparison
 # ---------------------------------------------------------------------------
 
 
 SPREADSHEET_CODE_RE = re.compile(r"^([A-Z]+\d+)\s*:")
 
 
-def load_tyler_totals(path: Path) -> dict[str, dict[str, float]]:
+def load_reference_totals(path: Path) -> dict[str, dict[str, float]]:
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb["DETAIL"]
     out: dict = defaultdict(lambda: defaultdict(float))
@@ -429,7 +429,7 @@ def load_tyler_totals(path: Path) -> dict[str, dict[str, float]]:
 
 def print_aggregated_summary(
     page_results: list[PageResult],
-    tyler: dict[str, dict[str, float]],
+    reference: dict[str, dict[str, float]],
 ):
     placed_counts: Counter = Counter()
     legend_counts: Counter = Counter()
@@ -453,7 +453,7 @@ def print_aggregated_summary(
 
     print()
     print("=" * 95)
-    print("MULTI-PAGE VECTOR-CALLOUT TAKEOFF vs TYLER")
+    print("MULTI-PAGE VECTOR-CALLOUT TAKEOFF vs REFERENCE")
     print("=" * 95)
     print()
     print(f"Pages processed: {[pr.page for pr in page_results]}")
@@ -474,10 +474,10 @@ def print_aggregated_summary(
           f"({n_ocr_valid/n_ocr_total*100:.1f}%)" if n_ocr_total else "")
 
     print()
-    print(f"{'CODE':6} {'PLACED':>6} {'LEGEND':>6}  per-page  Tyler quantities")
+    print(f"{'CODE':6} {'PLACED':>6} {'LEGEND':>6}  per-page  Reference quantities")
     print("-" * 95)
     all_codes = sorted(
-        set(placed_counts) | set(legend_counts) | set(tyler),
+        set(placed_counts) | set(legend_counts) | set(reference),
         key=lambda c: (c[:1], int(re.sub(r"\D", "", c) or 0)),
     )
     ea_matched = 0
@@ -488,11 +488,11 @@ def print_aggregated_summary(
         per_page = ", ".join(
             f"p{pr.page}={by_page[pr.page].get(code, 0)}" for pr in page_results
         )
-        tyler_row = tyler.get(code, {})
-        tyler_summary = " + ".join(f"{q:g} {u}" for u, q in tyler_row.items()) or "—"
+        reference_row = reference.get(code, {})
+        reference_summary = " + ".join(f"{q:g} {u}" for u, q in reference_row.items()) or "—"
         marker = ""
-        if "EA" in tyler_row and p > 0:
-            ta = tyler_row["EA"]
+        if "EA" in reference_row and p > 0:
+            ta = reference_row["EA"]
             ea_total += 1
             delta = p - ta
             pct = (delta / ta * 100) if ta else 0
@@ -501,7 +501,7 @@ def print_aggregated_summary(
                 ea_matched += 1
             else:
                 marker = f"  Δ={delta:+.0f} ({pct:+.0f}%) ✗"
-        print(f"{code:6} {p:>6} {leg:>6}   {per_page}   {tyler_summary}{marker}")
+        print(f"{code:6} {p:>6} {leg:>6}   {per_page}   {reference_summary}{marker}")
 
     print()
     if ea_total:
@@ -565,8 +565,8 @@ def main(argv=None) -> int:
         page_results.append(pr)
     doc.close()
 
-    tyler = load_tyler_totals(Path(args.spreadsheet))
-    print_aggregated_summary(page_results, tyler)
+    reference = load_reference_totals(Path(args.spreadsheet))
+    print_aggregated_summary(page_results, reference)
     return 0
 
 

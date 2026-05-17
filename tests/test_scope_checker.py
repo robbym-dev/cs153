@@ -1,6 +1,6 @@
 """Tests for bid_engine.scope_checker.
 
-Simulates Tyler's actual v1 → v2 evolution on Park Avenue Elementary School:
+Simulates Reference's actual v1 → v2 evolution on Park Avenue Elementary School:
 v1 missed scaffolding, fencing, and overhead shed protection; v2 added all
 three. The checker should flag all 3 on v1 and pass clean on v2.
 """
@@ -20,12 +20,12 @@ from bid_engine.scope_checker import (
 
 
 # ---------------------------------------------------------------------------
-# Fixtures — Tyler v1 / v2 simulations
+# Fixtures — Reference v1 / v2 simulations
 # ---------------------------------------------------------------------------
 
 
 def make_v1_scope() -> list[ScopeItem]:
-    """Tyler's v1: extracted WS/R scope only — no scaffolding/fence/shed."""
+    """Reference's v1: extracted WS/R scope only — no scaffolding/fence/shed."""
     return [
         ScopeItem("WS1", 170.3, "LF", description="Clean Cast Stone Bands"),
         ScopeItem("WS5", 23.0, "EA", description="Refasten Loose Grille"),
@@ -36,7 +36,7 @@ def make_v1_scope() -> list[ScopeItem]:
 
 
 def make_v2_scope() -> list[ScopeItem]:
-    """Tyler's v2: v1 + the three items he was told to add."""
+    """Reference's v2: v1 + the three items he was told to add."""
     return make_v1_scope() + [
         ScopeItem(
             "SCAFFOLD",

@@ -1,4 +1,4 @@
-"""Bid generator — write a Bid object to an Excel file in Tyler's format.
+"""Bid generator — write a Bid object to an Excel file in Reference's format.
 
 Layout:
     Row 1   : GENERAL SUMMARY (title)

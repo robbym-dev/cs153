@@ -107,7 +107,7 @@ Geometric circles found:    92
 OCR returned valid code:    21/92 (22.8%)
 Unrecognized OCR outputs:   71
 
-CODE    COUNT  Tyler quantities (any unit)
+CODE    COUNT  Reference quantities (any unit)
 --------------------------------------------------------------------------------
 A430        1   —
 C1          1   —

@@ -1,4 +1,4 @@
-CODE   SOURCE         EXTRACTED   TYLER (full building)      NOTE
+CODE   SOURCE         EXTRACTED   REFERENCE (full building)      NOTE
 ----------------------------------------------------------------------------------------------------
 WS10   parsed   21 EA (base_bid)   199.68 LF + 207.93 SF      embedded in description
 WS10   parsed   4 EA (alternate_2)   199.68 LF + 207.93 SF      embedded in description
@@ -6,7 +6,7 @@ WS15   parsed   2 EA (base_bid)   126.73 SF                  embedded in descrip
 WS7    parsed   8 EA (base_bid)   7 EA                       embedded in description
 WS8    parsed   100 LF (base_bid)   114 LF                     embedded in description
 WS1    probed            360 LF   250.01 LF                  callouts=6  WS1 calls out cast stone bands - measured as LF of horizonta…
-WS11   probed              2 EA   (not in Tyler)             callouts=2  WS11 calls for FRP door replacement. Two door locations visi…
+WS11   probed              2 EA   (not in Reference)             callouts=2  WS11 calls for FRP door replacement. Two door locations visi…
 WS12   probed              2 EA   6.4 SF                     callouts=2  WS12 refers to scraping/painting existing steel lintels - di…
 WS13   probed              2 EA   48.26 LF                   callouts=2  WS13 describes installing steel tubing/beam around door open…
 WS14   probed              2 EA   16.68 SF                   callouts=2  WS14 callouts appear at the two entrance doors (Girls on Nor…
@@ -21,14 +21,14 @@ WS5    probed              1 EA   23 EA                      callouts=1  Found o
 WS6    probed              2 EA   29.95 SF                   callouts=2  WS6 callouts found above the GIRLS door on north elevation a…
 WS9    probed              0 LF   210.54 LF                  callouts=0  No WS9 callouts visible on any of the four elevations shown;…
 
---- SAME-UNIT NUMERIC MATCHES (engine vs Tyler, abs delta % of Tyler) ---
-  WS1    LF   engine=360  tyler=250.01  delta=+44%
-  WS19   LF   engine=0  tyler=130.61  delta=-100%
-  WS3    LF   engine=80  tyler=55.11  delta=+45%
-  WS4    LF   engine=280  tyler=506.34  delta=-45%
-  WS5    EA   engine=1  tyler=23  delta=-96%
-  WS7    EA   engine=8  tyler=7  delta=+14%
-  WS8    LF   engine=100  tyler=114  delta=-12%
-  WS9    LF   engine=0  tyler=210.54  delta=-100%
+--- SAME-UNIT NUMERIC MATCHES (engine vs Reference, abs delta % of Reference) ---
+  WS1    LF   engine=360  reference=250.01  delta=+44%
+  WS19   LF   engine=0  reference=130.61  delta=-100%
+  WS3    LF   engine=80  reference=55.11  delta=+45%
+  WS4    LF   engine=280  reference=506.34  delta=-45%
+  WS5    EA   engine=1  reference=23  delta=-96%
+  WS7    EA   engine=8  reference=7  delta=+14%
+  WS8    LF   engine=100  reference=114  delta=-12%
+  WS9    LF   engine=0  reference=210.54  delta=-100%
 
 Unit-matched comparisons: 8    Unit-mismatched (can't compare): 10

@@ -8,7 +8,7 @@ Example:
 The PDF must be a marked-up plan set with a sidebar of scope codes (WSn / Rn)
 on each elevation page. Quantities are aggregated across pages, priced against
 the calibrated unit-cost catalog, run through the scope checker, and written
-out as an Excel file in Tyler's format. Scope alerts (missing scaffolding,
+out as an Excel file in Reference's format. Scope alerts (missing scaffolding,
 fencing, etc.) are printed to stdout after the bid summary.
 """
 

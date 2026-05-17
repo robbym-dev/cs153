@@ -1,6 +1,6 @@
 """Scope completeness checker — flag missing required items in a bid scope.
 
-Calibrated against Tyler's actual v1 → v2 corrections on the Park Avenue
+Calibrated against Reference's actual v1 → v2 corrections on the Park Avenue
 Elementary School project, where the v1 markup missed scaffolding, fencing,
 and overhead shed protection. The checker accepts a list of ScopeItems plus
 optional ProjectConfig (state, stories, wage rates) and returns a list of
@@ -47,7 +47,7 @@ class _RequiredItem:
     suggested_action: str
 
 
-# Required on every exterior renovation bid (per spec + Tyler's email thread).
+# Required on every exterior renovation bid (per spec + Reference's email thread).
 _REQUIRED_ITEMS: tuple[_RequiredItem, ...] = (
     _RequiredItem(
         item_id="scaffolding",

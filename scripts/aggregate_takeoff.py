@@ -44,7 +44,7 @@ def _normalize_unit(u: str) -> str:
     return u
 
 
-def load_tyler(path: Path) -> dict[tuple[str, str], float]:
+def load_reference(path: Path) -> dict[tuple[str, str], float]:
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb["DETAIL"]
     totals: dict = defaultdict(float)
@@ -193,14 +193,14 @@ def build_engine_totals(
 
 def print_comparison(
     engine: dict,
-    tyler: dict,
+    reference: dict,
     parsed_dedup: dict,
     probed_sum: dict,
     warnings: list[str],
     pages: dict[int, dict],
 ):
     print("=" * 100)
-    print("MULTI-PAGE TAKEOFF — PA ORIGINAL DRAWINGS vs TYLER")
+    print("MULTI-PAGE TAKEOFF — PA ORIGINAL DRAWINGS vs REFERENCE")
     print("=" * 100)
     print()
     print(f"Pages aggregated: {sorted(pages.keys())}")
@@ -227,28 +227,28 @@ def print_comparison(
     )
     print(f"Probed (code,unit) totals (summed across pages):   {len(probed_sum)}")
 
-    # Line-by-line comparison vs Tyler
-    all_keys = sorted(set(engine) | set(tyler))
+    # Line-by-line comparison vs Reference
+    all_keys = sorted(set(engine) | set(reference))
     print()
     print(
-        f"{'M':1} {'CODE':6} {'UNIT':4}  {'ENGINE':>9} {'TYLER':>9} "
+        f"{'M':1} {'CODE':6} {'UNIT':4}  {'ENGINE':>9} {'REFERENCE':>9} "
         f"{'Δ':>9} {'Δ%':>7}  SOURCE"
     )
     print("-" * 100)
     matches_within_tolerance = 0
     comparable = 0
     extr_total_same_unit = 0.0
-    tyler_total_same_unit = 0.0
+    reference_total_same_unit = 0.0
     for key in all_keys:
         code, unit = key
         e_info = engine.get(key)
         e = e_info["quantity"] if e_info else 0.0
         src = e_info["source"] if e_info else "—"
-        t = tyler.get(key, 0.0)
+        t = reference.get(key, 0.0)
         if t > 0:
             comparable += 1
             extr_total_same_unit += e
-            tyler_total_same_unit += t
+            reference_total_same_unit += t
             delta = e - t
             pct = delta / t * 100
             within = abs(pct) <= TOLERANCE_PCT
@@ -260,7 +260,7 @@ def print_comparison(
                 f"{delta:>+9.2f} {pct:>+6.1f}%  {src}"
             )
         else:
-            # Engine returned something Tyler doesn't have, or Tyler has a row
+            # Engine returned something Reference doesn't have, or Reference has a row
             # in a different unit
             print(
                 f"  {code:6} {unit:4}  {e:>9.2f} {t:>9.2f} "
@@ -275,7 +275,7 @@ def print_comparison(
         f"  Same-unit comparable codes:           {comparable}"
     )
     print(
-        f"  Within ±{TOLERANCE_PCT}% of Tyler:                  "
+        f"  Within ±{TOLERANCE_PCT}% of Reference:                  "
         f"{matches_within_tolerance}/{comparable}"
         f" ({matches_within_tolerance/comparable*100:.0f}%)"
         if comparable
@@ -284,9 +284,9 @@ def print_comparison(
     print(
         f"  Aggregate sum (same-unit comparable): "
         f"engine={extr_total_same_unit:.1f}  "
-        f"tyler={tyler_total_same_unit:.1f}  "
-        f"delta={extr_total_same_unit - tyler_total_same_unit:+.1f} "
-        f"({(extr_total_same_unit-tyler_total_same_unit)/tyler_total_same_unit*100:+.1f}%)"
+        f"reference={reference_total_same_unit:.1f}  "
+        f"delta={extr_total_same_unit - reference_total_same_unit:+.1f} "
+        f"({(extr_total_same_unit-reference_total_same_unit)/reference_total_same_unit*100:+.1f}%)"
     )
 
     # Alternate-bid records
@@ -317,9 +317,9 @@ def main(argv=None) -> int:
         print(f"no page*{args.suffix}.json found in {args.pages_dir}")
         return 1
     parsed_dedup, probed_sum, warnings, conversions = aggregate(pages)
-    tyler = load_tyler(Path(args.spreadsheet))
+    reference = load_reference(Path(args.spreadsheet))
     engine = build_engine_totals(parsed_dedup, probed_sum, conversions)
-    print_comparison(engine, tyler, parsed_dedup, probed_sum, warnings, pages)
+    print_comparison(engine, reference, parsed_dedup, probed_sum, warnings, pages)
     if conversions:
         print()
         print(f"Unit conversions applied ({len(conversions)} record(s) across pages):")

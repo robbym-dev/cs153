@@ -189,7 +189,7 @@ def main() -> int:
     counter_labels.append("abstract")
 
     all_codes = sorted(set().union(*counters))
-    tyler = {
+    reference = {
         "WS5": "23 EA", "WS7": "7 EA", "R1": "2 EA", "R2": "8 EA",
         "R3": "2 EA", "R4": "2 EA", "R5": "2 EA",
         "WS1": "250 LF", "WS4": "506 LF", "WS8": "114 LF",
@@ -197,11 +197,11 @@ def main() -> int:
     }
 
     print(f"\nPlaced-callout counts (page 8 only):")
-    header = "  " + f"{'CODE':6}  " + "  ".join(f"{lab[:9]:>9}" for lab in counter_labels) + "  Tyler"
+    header = "  " + f"{'CODE':6}  " + "  ".join(f"{lab[:9]:>9}" for lab in counter_labels) + "  Reference"
     print(header)
     for code in all_codes:
         row = f"  {code:6}  " + "  ".join(f"{c.get(code, 0):>9}" for c in counters)
-        ty = tyler.get(code, "")
+        ty = reference.get(code, "")
         print(f"{row}  {ty}")
 
     # Phantom-code summary: codes from prior runs' bias examples that don't

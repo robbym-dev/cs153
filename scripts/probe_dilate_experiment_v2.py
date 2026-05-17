@@ -182,15 +182,15 @@ def main() -> int:
 
     all_codes = sorted(set(base_pl) | set(bias_pl) | set(new_pl))
     print(f"\nPlaced-callout counts (page 8 only):")
-    print(f"  {'CODE':6}  {'v2':>4}  {'biased':>6}  {'de-anchored':>11}  Tyler")
-    tyler = {
+    print(f"  {'CODE':6}  {'v2':>4}  {'biased':>6}  {'de-anchored':>11}  Reference")
+    reference = {
         "WS5": "23 EA", "WS7": "7 EA", "R1": "2 EA", "R2": "8 EA",
         "R3": "2 EA", "R4": "2 EA", "R5": "2 EA",
         "WS1": "250 LF", "WS4": "506 LF", "WS8": "114 LF",
     }
     for code in all_codes:
         b = base_pl.get(code, 0); x = bias_pl.get(code, 0); n_ = new_pl.get(code, 0)
-        ty = tyler.get(code, "—")
+        ty = reference.get(code, "—")
         print(f"  {code:6}  {b:>4}  {x:>6}  {n_:>11}  {ty}")
 
     # WS5 specifically
@@ -198,7 +198,7 @@ def main() -> int:
     ws5_bias = bias_pl.get("WS5", 0)
     ws5_new = new_pl.get("WS5", 0)
     print(f"\nWS5 trajectory: v2={ws5_base}, biased={ws5_bias}, de-anchored={ws5_new}  "
-          f"(target 13-20, Tyler full-bldg total 23)")
+          f"(target 13-20, Reference full-bldg total 23)")
 
     # Top unrecognized this run
     bad = Counter(r["raw"] for r in results if not r.get("code"))

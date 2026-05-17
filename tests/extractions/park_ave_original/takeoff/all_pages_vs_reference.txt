@@ -1,5 +1,5 @@
 ====================================================================================================
-MULTI-PAGE TAKEOFF — PA ORIGINAL DRAWINGS vs TYLER
+MULTI-PAGE TAKEOFF — PA ORIGINAL DRAWINGS vs REFERENCE
 ====================================================================================================
 
 Pages aggregated: [7, 8, 9, 10]
@@ -9,7 +9,7 @@ Per-page scale: p7=1/2" = 1'-0", p8=1/8" = 1'-0", p9=1/8" = 1'-0", p10=1/8" = 1'
 Parsed records (deduped across 4 pages): 5
 Probed (code,unit) totals (summed across pages):   23
 
-M CODE   UNIT     ENGINE     TYLER         Δ      Δ%  SOURCE
+M CODE   UNIT     ENGINE     REFERENCE         Δ      Δ%  SOURCE
 ----------------------------------------------------------------------------------------------------
 ✗ R1     EA         4.00      2.00     +2.00 +100.0%  probed
 ✗ R2     EA         2.00      8.00     -6.00  -75.0%  probed
@@ -52,8 +52,8 @@ M CODE   UNIT     ENGINE     TYLER         Δ      Δ%  SOURCE
 SUMMARY
 ====================================================================================================
   Same-unit comparable codes:           24
-  Within ±15% of Tyler:                  6/24 (25%)
-  Aggregate sum (same-unit comparable): engine=1143.0  tyler=2119.3  delta=-976.3 (-46.1%)
+  Within ±15% of Reference:                  6/24 (25%)
+  Aggregate sum (same-unit comparable): engine=1143.0  reference=2119.3  delta=-976.3 (-46.1%)
 
 Parsed alternate-bid quantities (not summed into base totals):
   WS10   alternate_2        4.00 EA   (pages [7, 8, 9, 10])

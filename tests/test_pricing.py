@@ -1,6 +1,6 @@
 """Tests for bid_engine.pricing.
 
-The five `test_validates_*` cases compare our pricing engine against Tyler's
+The five `test_validates_*` cases compare our pricing engine against Reference's
 actual line totals from the Park Avenue Elementary School bid. Each should
 land within 5%.
 """
@@ -26,12 +26,12 @@ from bid_engine.pricing import (
 
 
 # ---------------------------------------------------------------------------
-# Calibration cases — pricing engine vs Tyler's actual bid (must be < 5%)
+# Calibration cases — pricing engine vs Reference's actual bid (must be < 5%)
 # ---------------------------------------------------------------------------
 
 
 @pytest.mark.parametrize(
-    "code, quantity, unit, tyler_total",
+    "code, quantity, unit, reference_total",
     [
         ("WS4", 205.7, "LF", 1520.47),
         ("WS5", 23.0, "EA", 1335.17),
@@ -40,18 +40,18 @@ from bid_engine.pricing import (
         ("WS15", 126.73, "SF", 3497.05),
     ],
 )
-def test_validates_within_5pct_of_tyler(code, quantity, unit, tyler_total):
-    """Each line item must price within 5% of Tyler's reference figure."""
+def test_validates_within_5pct_of_reference(code, quantity, unit, reference_total):
+    """Each line item must price within 5% of Reference's reference figure."""
     scope = ScopeItem(code=code, quantity=quantity, unit=unit, description="")
     unit_cost = DEFAULT_UNIT_COSTS[(code, unit)]
     wage = DEFAULT_WAGES[unit_cost.trade]
 
     line = price_scope_item(scope, unit_cost, wage)
 
-    delta_pct = abs(line.total_cost - tyler_total) / tyler_total
+    delta_pct = abs(line.total_cost - reference_total) / reference_total
     assert delta_pct < 0.05, (
         f"{code} {quantity} {unit}: priced ${line.total_cost:.2f}, "
-        f"Tyler ${tyler_total:.2f}, delta {delta_pct:.2%}"
+        f"Reference ${reference_total:.2f}, delta {delta_pct:.2%}"
     )
 
 

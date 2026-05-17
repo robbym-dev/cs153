@@ -1,9 +1,9 @@
-"""Run the end-to-end pipeline: load extractions → price → compare to Tyler.
+"""Run the end-to-end pipeline: load extractions → price → compare to Reference.
 
 Reads tests/extractions/page{2,3,6}.txt and tests/baseline_page5.txt
 (pages 7 and 8 are byte-identical duplicates of 5 and 6 — same elevation in
 different bid packages — so they are excluded). Aggregates by (code, unit),
-runs through `price_bid`, and reports the priced bid against Tyler's DIV-07
+runs through `price_bid`, and reports the priced bid against Reference's DIV-07
 THERMAL & MOISTURE PROTECTION subtotal of $28,871.
 """
 
@@ -23,7 +23,7 @@ EXTRACTION_FILES = {
     5: PROJECT_ROOT / "tests" / "baseline_page5.txt",
     6: PROJECT_ROOT / "tests" / "extractions" / "page6.txt",
 }
-TYLER_DIV07_SUBTOTAL = 28871.45  # DIV-07 THERMAL & MOISTURE PROTECTION
+REFERENCE_DIV07_SUBTOTAL = 28871.45  # DIV-07 THERMAL & MOISTURE PROTECTION
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 # Suppress the per-line INFO trace from pricing.py so the report stays readable;
@@ -102,15 +102,15 @@ def report_bid(bid, scope_count: int) -> None:
 
 
 def report_comparison(engine_subtotal: float) -> None:
-    delta = engine_subtotal - TYLER_DIV07_SUBTOTAL
-    pct = (delta / TYLER_DIV07_SUBTOTAL) * 100.0
+    delta = engine_subtotal - REFERENCE_DIV07_SUBTOTAL
+    pct = (delta / REFERENCE_DIV07_SUBTOTAL) * 100.0
     sep = "-" * 78
     logger.info("")
     logger.info(sep)
-    logger.info("COMPARISON vs Tyler DIV-07 (THERMAL & MOISTURE PROTECTION)")
+    logger.info("COMPARISON vs Reference DIV-07 (THERMAL & MOISTURE PROTECTION)")
     logger.info(sep)
     logger.info("  engine subtotal:    $%14.2f", engine_subtotal)
-    logger.info("  Tyler DIV-07:       $%14.2f", TYLER_DIV07_SUBTOTAL)
+    logger.info("  Reference DIV-07:       $%14.2f", REFERENCE_DIV07_SUBTOTAL)
     logger.info("  delta:              $%+14.2f  (%+.2f%%)", delta, pct)
 
 
