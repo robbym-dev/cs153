@@ -1,0 +1,1324 @@
+{
+  "page": 8,
+  "templates": {
+    "W": {
+      "character": "W",
+      "n_examples": 20,
+      "avg_lines": 4.0,
+      "avg_endpoints": 5.0,
+      "avg_h": 5.376007080078125,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.04798894157467713
+    },
+    "S": {
+      "character": "S",
+      "n_examples": 20,
+      "avg_lines": 19.0,
+      "avg_endpoints": 20.0,
+      "avg_h": 3.732025146484375,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.035980291908466536
+    },
+    "5": {
+      "character": "5",
+      "n_examples": 13,
+      "avg_lines": 13.461538461538462,
+      "avg_endpoints": 14.0,
+      "avg_h": 3.1476675180288463,
+      "std_lines": 10.352371594621983,
+      "std_endpoints": 9.883941910609739,
+      "std_h": 1.0151730738247795
+    },
+    "1": {
+      "character": "1",
+      "n_examples": 4,
+      "avg_lines": 3.0,
+      "avg_endpoints": 4.0,
+      "avg_h": 2.010009765625,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 1.1950840482373608
+    },
+    "6": {
+      "character": "6",
+      "n_examples": 1,
+      "avg_lines": 16.0,
+      "avg_endpoints": 16.0,
+      "avg_h": 3.719970703125,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.0
+    },
+    "9": {
+      "character": "9",
+      "n_examples": 1,
+      "avg_lines": 3.0,
+      "avg_endpoints": 4.0,
+      "avg_h": 1.4400634765625,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.0
+    },
+    "0": {
+      "character": "0",
+      "n_examples": 1,
+      "avg_lines": 16.0,
+      "avg_endpoints": 17.0,
+      "avg_h": 3.719970703125,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.0
+    },
+    "4": {
+      "character": "4",
+      "n_examples": 2,
+      "avg_lines": 14.0,
+      "avg_endpoints": 15.0,
+      "avg_h": 3.72003173828125,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 6.103515625e-05
+    },
+    "8": {
+      "character": "8",
+      "n_examples": 1,
+      "avg_lines": 3.0,
+      "avg_endpoints": 4.0,
+      "avg_h": 4.080078125,
+      "std_lines": 0.0,
+      "std_endpoints": 0.0,
+      "std_h": 0.0
+    }
+  },
+  "predictions": [
+    {
+      "cx": 1502.4600830078125,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1468.9801025390625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "A430",
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.088
+      ]
+    },
+    {
+      "cx": 1436.340087890625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1408.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1380.1800537109375,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1348.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.492
+      ]
+    },
+    {
+      "cx": 1315.5,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.127
+      ]
+    },
+    {
+      "cx": 1287.9000244140625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "R2",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        1.017
+      ]
+    },
+    {
+      "cx": 1255.1400146484375,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS16",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.492
+      ]
+    },
+    {
+      "cx": 1210.739990234375,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS16",
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 1168.5,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS19",
+      "predicted_code": "WS19",
+      "distances": [
+        0.024,
+        0.027,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 1125.1800537109375,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS14",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.088
+      ]
+    },
+    {
+      "cx": 1097.340087890625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS14",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 1069.260009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS18",
+      "distances": [
+        0.024,
+        0.003,
+        0.175,
+        0.031
+      ]
+    },
+    {
+      "cx": 1031.10009765625,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 994.1400146484375,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.492
+      ]
+    },
+    {
+      "cx": 965.4600219726562,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS1",
+      "predicted_code": "WS18",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.127
+      ]
+    },
+    {
+      "cx": 937.3800659179688,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS1",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        1.017
+      ]
+    },
+    {
+      "cx": 908.8200073242188,
+      "cy": 1209.7799072265625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS1",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.492
+      ]
+    },
+    {
+      "cx": 1887.1800537109375,
+      "cy": 1313.0999755859375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.093
+      ]
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 584.579833984375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        1.018
+      ]
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 918.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "R2",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.027,
+        1.017
+      ]
+    },
+    {
+      "cx": 1156.8599853515625,
+      "cy": 760.619873046875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 731.4599609375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 927.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.127
+      ]
+    },
+    {
+      "cx": 1771.1400146484375,
+      "cy": 676.260009765625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1786.860107421875,
+      "cy": 2035.739990234375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 593.4599609375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 927.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 2196.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1109.4600830078125,
+      "cy": 1863.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 1854.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.027,
+        1.017
+      ]
+    },
+    {
+      "cx": 1277.10009765625,
+      "cy": 2187.89990234375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        1.018
+      ]
+    },
+    {
+      "cx": 1156.8599853515625,
+      "cy": 2030.3399658203125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 2001.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 998.1000366210938,
+      "cy": 610.739990234375,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "R2",
+      "predicted_code": "WS16",
+      "distances": [
+        0.024,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 511.7400360107422,
+      "cy": 1990.02001953125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.031
+      ]
+    },
+    {
+      "cx": 626.5800170898438,
+      "cy": 877.3798828125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS8",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 511.7400360107422,
+      "cy": 853.3798828125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 598.85986328125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 466.9800109863281,
+      "cy": 598.85986328125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1176.0599365234375,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": "WS10",
+      "predicted_code": "WS10",
+      "distances": [
+        0.024,
+        0.027,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 2248.139892578125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 459.4200134277344,
+      "cy": 2290.139892578125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 406.1400146484375,
+      "cy": 749.33984375,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.031
+      ]
+    },
+    {
+      "cx": 519.300048828125,
+      "cy": 1009.2598876953125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "R2",
+      "predicted_code": "WS16",
+      "distances": [
+        0.024,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1622.93994140625,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": "WS8",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 358.3800048828125,
+      "cy": 2290.139892578125,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS16",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 523.1400146484375,
+      "cy": 1143.89990234375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS1",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 580.9800415039062,
+      "cy": 634.85986328125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.024,
+        0.027,
+        1.017
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 994.4998779296875,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1379.699951171875,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.145,
+        0.03
+      ]
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 797.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.027,
+        0.031
+      ]
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 797.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.027,
+        0.031
+      ]
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 797.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 2013.06005859375,
+      "cy": 1351.739990234375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.094
+      ]
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 1072.4998779296875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 1072.4998779296875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 1072.4998779296875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS4",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 1879.1400146484375,
+      "cy": 1072.4998779296875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS4",
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 1771.5,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1801.7401123046875,
+      "cy": 1771.5,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 1771.5,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS1",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 1879.1400146484375,
+      "cy": 1771.5,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS4",
+      "distances": [
+        0.006,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 1916.580078125,
+      "cy": 2047.139892578125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1731.6600341796875,
+      "cy": 2047.139892578125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 1827.4200439453125,
+      "cy": 2047.139892578125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 927.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.024,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 557.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.027,
+        0.031
+      ]
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 848.4599609375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.492
+      ]
+    },
+    {
+      "cx": 1057.739990234375,
+      "cy": 2117.4599609375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        0.492
+      ]
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 2196.179931640625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.024,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 1011.6600341796875,
+      "cy": 1826.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS9",
+      "distances": [
+        0.006,
+        0.027,
+        0.03
+      ]
+    },
+    {
+      "cx": 978.6600341796875,
+      "cy": 1901.4599609375,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS0",
+      "distances": [
+        0.024,
+        0.003,
+        0.489
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 721.739990234375,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS10",
+      "distances": [
+        0.024,
+        0.027,
+        0.175,
+        0.0
+      ]
+    },
+    {
+      "cx": 328.1400146484375,
+      "cy": 2207.219970703125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.027,
+        0.127
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 1990.02001953125,
+      "in_legend": true,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS10",
+      "distances": [
+        0.006,
+        0.003,
+        0.175,
+        0.031
+      ]
+    },
+    {
+      "cx": 662.5800170898438,
+      "cy": 835.739990234375,
+      "in_legend": true,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS0",
+      "distances": [
+        0.006,
+        0.003,
+        1.018
+      ]
+    },
+    {
+      "cx": 489.5400085449219,
+      "cy": 548.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.027,
+        0.0
+      ]
+    },
+    {
+      "cx": 375.5400085449219,
+      "cy": 548.699951171875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.027,
+        0.0
+      ]
+    },
+    {
+      "cx": 535.1400146484375,
+      "cy": 817.260009765625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS18",
+      "distances": [
+        0.006,
+        2.079,
+        1.489,
+        0.031
+      ]
+    },
+    {
+      "cx": 420.4200134277344,
+      "cy": 817.260009765625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": null,
+      "predicted_code": "WS18",
+      "distances": [
+        0.006,
+        2.079,
+        1.489,
+        0.031
+      ]
+    },
+    {
+      "cx": 535.1400146484375,
+      "cy": 910.3798828125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS8",
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 420.4200134277344,
+      "cy": 910.3798828125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.003,
+        0.0
+      ]
+    },
+    {
+      "cx": 511.3800506591797,
+      "cy": 1379.699951171875,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS5",
+      "predicted_code": "WS18",
+      "distances": [
+        0.006,
+        0.027,
+        1.785,
+        0.031
+      ]
+    },
+    {
+      "cx": 511.3800506591797,
+      "cy": 1622.93994140625,
+      "in_legend": false,
+      "n_paths": 4,
+      "llm_code": "WS4",
+      "predicted_code": "WS18",
+      "distances": [
+        0.006,
+        0.003,
+        1.785,
+        0.031
+      ]
+    },
+    {
+      "cx": 405.1800231933594,
+      "cy": 2290.139892578125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 519.1799926757812,
+      "cy": 2290.139892578125,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.031
+      ]
+    },
+    {
+      "cx": 450.0600280761719,
+      "cy": 2038.97998046875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": "WS5",
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 564.780029296875,
+      "cy": 2038.97998046875,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.006,
+        0.003,
+        0.03
+      ]
+    },
+    {
+      "cx": 450.0600280761719,
+      "cy": 1957.8599853515625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.027,
+        0.0
+      ]
+    },
+    {
+      "cx": 564.780029296875,
+      "cy": 1957.8599853515625,
+      "in_legend": false,
+      "n_paths": 3,
+      "llm_code": null,
+      "predicted_code": "WS8",
+      "distances": [
+        0.024,
+        0.027,
+        0.0
+      ]
+    }
+  ]
+}
