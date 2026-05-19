@@ -1,0 +1,68 @@
+{
+  "page": 8,
+  "method": "sequential keynote-legend matching",
+  "n_legend_circles": 7,
+  "n_keynote_codes": 19,
+  "matches_accepted": 0,
+  "matches_rejected": 7,
+  "counts_per_class": {},
+  "audit": [
+    {
+      "position": 0,
+      "cy": 721.739990234375,
+      "assumed_code": "WS1",
+      "n_paths": 4,
+      "llm_read": null,
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS1)=3"
+    },
+    {
+      "position": 1,
+      "cy": 835.739990234375,
+      "assumed_code": "WS2",
+      "n_paths": 3,
+      "llm_read": "WS5",
+      "verdict": "REJECT \u2014 LLM-read='WS5'"
+    },
+    {
+      "position": 2,
+      "cy": 994.4998779296875,
+      "assumed_code": "WS3",
+      "n_paths": 4,
+      "llm_read": "WS5",
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS3)=3, LLM-read='WS5'"
+    },
+    {
+      "position": 3,
+      "cy": 1176.0599365234375,
+      "assumed_code": "WS4",
+      "n_paths": 4,
+      "llm_read": "WS10",
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS4)=3, LLM-read='WS10'"
+    },
+    {
+      "position": 4,
+      "cy": 1379.699951171875,
+      "assumed_code": "WS5",
+      "n_paths": 4,
+      "llm_read": null,
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS5)=3"
+    },
+    {
+      "position": 5,
+      "cy": 1622.93994140625,
+      "assumed_code": "WS6",
+      "n_paths": 4,
+      "llm_read": "WS8",
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS6)=3, LLM-read='WS8'"
+    },
+    {
+      "position": 6,
+      "cy": 1990.02001953125,
+      "assumed_code": "WS7",
+      "n_paths": 4,
+      "llm_read": null,
+      "verdict": "REJECT \u2014 path-count=4 vs len(WS7)=3"
+    }
+  ],
+  "items": []
+}
