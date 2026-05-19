@@ -1,0 +1,762 @@
+{
+  "page": 8,
+  "dpi": 600,
+  "n_clusters": 20,
+  "model": "facebook/dinov2-small",
+  "n_forbidden_pairs": 467,
+  "unconstrained": {
+    "labeled": 80,
+    "distinct": 6,
+    "ea_ok": 1,
+    "ea_total": 2,
+    "counts": {
+      "WS5": 44,
+      "WS16": 4,
+      "WS1": 7,
+      "R2": 8,
+      "WS4": 10
+    },
+    "mixed_clusters": 6
+  },
+  "constrained": {
+    "labeled": 87,
+    "distinct": 9,
+    "ea_ok": 1,
+    "ea_total": 2,
+    "counts": {
+      "WS5": 46,
+      "A430": 4,
+      "R2": 7,
+      "WS16": 2,
+      "WS19": 1,
+      "WS1": 7,
+      "WS8": 4,
+      "WS4": 9
+    },
+    "mixed_clusters": 0
+  },
+  "constrained_clusters": [
+    {
+      "id": 9,
+      "size": 6,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 3
+      },
+      "members": [
+        {
+          "cx": 1502.4600830078125,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1436.340087890625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 1408.260009765625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1380.1800537109375,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1348.260009765625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 1315.5,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "size": 4,
+      "label": "A430",
+      "llm_reads": {
+        "A430": 1
+      },
+      "members": [
+        {
+          "cx": 1468.9801025390625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "A430"
+        },
+        {
+          "cx": 1277.10009765625,
+          "cy": 584.579833984375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1156.8599853515625,
+          "cy": 2030.3399658203125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 375.5400085449219,
+          "cy": 548.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "size": 2,
+      "label": "R2",
+      "llm_reads": {
+        "R2": 2
+      },
+      "members": [
+        {
+          "cx": 1287.9000244140625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "R2"
+        },
+        {
+          "cx": 1277.10009765625,
+          "cy": 918.179931640625,
+          "in_legend": false,
+          "llm_code": "R2"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "size": 2,
+      "label": "WS16",
+      "llm_reads": {
+        "WS16": 2
+      },
+      "members": [
+        {
+          "cx": 1255.1400146484375,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS16"
+        },
+        {
+          "cx": 1210.739990234375,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS16"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "size": 1,
+      "label": "WS19",
+      "llm_reads": {
+        "WS19": 1
+      },
+      "members": [
+        {
+          "cx": 1168.5,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS19"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "size": 8,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 4
+      },
+      "members": [
+        {
+          "cx": 1125.1800537109375,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1097.340087890625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 511.7400360107422,
+          "cy": 853.3798828125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1057.739990234375,
+          "cy": 848.4599609375,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 1057.739990234375,
+          "cy": 2117.4599609375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1011.6600341796875,
+          "cy": 1826.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 662.5800170898438,
+          "cy": 835.739990234375,
+          "in_legend": true,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 535.1400146484375,
+          "cy": 817.260009765625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "size": 1,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 1
+      },
+      "members": [
+        {
+          "cx": 1069.260009765625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "size": 2,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 1
+      },
+      "members": [
+        {
+          "cx": 1031.10009765625,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 994.1400146484375,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "size": 6,
+      "label": "WS1",
+      "llm_reads": {
+        "WS1": 4
+      },
+      "members": [
+        {
+          "cx": 965.4600219726562,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS1"
+        },
+        {
+          "cx": 937.3800659179688,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS1"
+        },
+        {
+          "cx": 908.8200073242188,
+          "cy": 1209.7799072265625,
+          "in_legend": false,
+          "llm_code": "WS1"
+        },
+        {
+          "cx": 1801.7401123046875,
+          "cy": 1771.5,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1916.580078125,
+          "cy": 1771.5,
+          "in_legend": false,
+          "llm_code": "WS1"
+        },
+        {
+          "cx": 1879.1400146484375,
+          "cy": 1771.5,
+          "in_legend": false,
+          "llm_code": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "size": 10,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 1
+      },
+      "members": [
+        {
+          "cx": 1887.1800537109375,
+          "cy": 1313.0999755859375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 511.7400360107422,
+          "cy": 1990.02001953125,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 580.9800415039062,
+          "cy": 598.85986328125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 466.9800109863281,
+          "cy": 598.85986328125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 580.9800415039062,
+          "cy": 634.85986328125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 2013.06005859375,
+          "cy": 1351.739990234375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 662.5800170898438,
+          "cy": 1990.02001953125,
+          "in_legend": true,
+          "llm_code": null
+        },
+        {
+          "cx": 489.5400085449219,
+          "cy": 548.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 450.0600280761719,
+          "cy": 1957.8599853515625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 564.780029296875,
+          "cy": 1957.8599853515625,
+          "in_legend": false,
+          "llm_code": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "size": 1,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 1
+      },
+      "members": [
+        {
+          "cx": 1156.8599853515625,
+          "cy": 760.619873046875,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "size": 21,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 2
+      },
+      "members": [
+        {
+          "cx": 1057.739990234375,
+          "cy": 731.4599609375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1771.1400146484375,
+          "cy": 676.260009765625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1786.860107421875,
+          "cy": 2035.739990234375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1109.4600830078125,
+          "cy": 2196.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1277.10009765625,
+          "cy": 2187.89990234375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 406.1400146484375,
+          "cy": 749.33984375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 662.5800170898438,
+          "cy": 1379.699951171875,
+          "in_legend": true,
+          "llm_code": null
+        },
+        {
+          "cx": 1916.580078125,
+          "cy": 797.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1801.7401123046875,
+          "cy": 797.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1731.6600341796875,
+          "cy": 797.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1916.580078125,
+          "cy": 2047.139892578125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1731.6600341796875,
+          "cy": 2047.139892578125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1827.4200439453125,
+          "cy": 2047.139892578125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1011.6600341796875,
+          "cy": 2196.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 662.5800170898438,
+          "cy": 721.739990234375,
+          "in_legend": true,
+          "llm_code": null
+        },
+        {
+          "cx": 328.1400146484375,
+          "cy": 2207.219970703125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 420.4200134277344,
+          "cy": 817.260009765625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 420.4200134277344,
+          "cy": 910.3798828125,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 511.3800506591797,
+          "cy": 1379.699951171875,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 450.0600280761719,
+          "cy": 2038.97998046875,
+          "in_legend": false,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 564.780029296875,
+          "cy": 2038.97998046875,
+          "in_legend": false,
+          "llm_code": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "size": 5,
+      "label": "WS8",
+      "llm_reads": {
+        "WS8": 3
+      },
+      "members": [
+        {
+          "cx": 1057.739990234375,
+          "cy": 927.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 626.5800170898438,
+          "cy": 877.3798828125,
+          "in_legend": false,
+          "llm_code": "WS8"
+        },
+        {
+          "cx": 662.5800170898438,
+          "cy": 1622.93994140625,
+          "in_legend": true,
+          "llm_code": "WS8"
+        },
+        {
+          "cx": 1011.6600341796875,
+          "cy": 927.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 535.1400146484375,
+          "cy": 910.3798828125,
+          "in_legend": false,
+          "llm_code": "WS8"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "size": 4,
+      "label": "R2",
+      "llm_reads": {
+        "R2": 1
+      },
+      "members": [
+        {
+          "cx": 1109.4600830078125,
+          "cy": 593.4599609375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1057.739990234375,
+          "cy": 2001.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 998.1000366210938,
+          "cy": 610.739990234375,
+          "in_legend": false,
+          "llm_code": "R2"
+        },
+        {
+          "cx": 1011.6600341796875,
+          "cy": 557.699951171875,
+          "in_legend": false,
+          "llm_code": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "size": 6,
+      "label": "WS4",
+      "llm_reads": {
+        "WS4": 1
+      },
+      "members": [
+        {
+          "cx": 1109.4600830078125,
+          "cy": 927.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1109.4600830078125,
+          "cy": 1863.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1277.10009765625,
+          "cy": 1854.179931640625,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1731.6600341796875,
+          "cy": 1072.4998779296875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 978.6600341796875,
+          "cy": 1901.4599609375,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 511.3800506591797,
+          "cy": 1622.93994140625,
+          "in_legend": false,
+          "llm_code": "WS4"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "size": 1,
+      "label": "WS10",
+      "llm_reads": {
+        "WS10": 1
+      },
+      "members": [
+        {
+          "cx": 662.5800170898438,
+          "cy": 1176.0599365234375,
+          "in_legend": true,
+          "llm_code": "WS10"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "size": 1,
+      "label": "R2",
+      "llm_reads": {
+        "R2": 1
+      },
+      "members": [
+        {
+          "cx": 519.300048828125,
+          "cy": 1009.2598876953125,
+          "in_legend": false,
+          "llm_code": "R2"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "size": 1,
+      "label": "WS1",
+      "llm_reads": {
+        "WS1": 1
+      },
+      "members": [
+        {
+          "cx": 523.1400146484375,
+          "cy": 1143.89990234375,
+          "in_legend": false,
+          "llm_code": "WS1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "size": 2,
+      "label": "WS5",
+      "llm_reads": {
+        "WS5": 2
+      },
+      "members": [
+        {
+          "cx": 662.5800170898438,
+          "cy": 994.4998779296875,
+          "in_legend": true,
+          "llm_code": "WS5"
+        },
+        {
+          "cx": 1731.6600341796875,
+          "cy": 1771.5,
+          "in_legend": false,
+          "llm_code": "WS5"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "size": 3,
+      "label": "WS4",
+      "llm_reads": {
+        "WS4": 2
+      },
+      "members": [
+        {
+          "cx": 1801.7401123046875,
+          "cy": 1072.4998779296875,
+          "in_legend": false,
+          "llm_code": null
+        },
+        {
+          "cx": 1916.580078125,
+          "cy": 1072.4998779296875,
+          "in_legend": false,
+          "llm_code": "WS4"
+        },
+        {
+          "cx": 1879.1400146484375,
+          "cy": 1072.4998779296875,
+          "in_legend": false,
+          "llm_code": "WS4"
+        }
+      ]
+    }
+  ]
+}
