@@ -1,0 +1,317 @@
+{
+  "source_pdf": "PA_Exterior_Renovations_Bid_Apr_6_2026.pdf",
+  "pages": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "dpi": 600,
+  "crop_margin_pt": 1.5,
+  "counts_per_class": {
+    "5": 10,
+    "1": 5,
+    "6": 1,
+    "9": 1,
+    "0": 1,
+    "4": 2,
+    "8": 1
+  },
+  "total": 21,
+  "items": [
+    {
+      "page": 8,
+      "callout_idx": 2,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c2_d5.png",
+      "path_bbox": [
+        1433.52,
+        1214.04,
+        1439.16,
+        1217.76
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 5,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c5_d5.png",
+      "path_bbox": [
+        1345.32,
+        1214.28,
+        1350.96,
+        1217.76
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 6,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c6_d5.png",
+      "path_bbox": [
+        1312.68,
+        1214.04,
+        1318.32,
+        1217.76
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 9,
+      "code": "WS16",
+      "digit_char": "1",
+      "rel_path": "data/digit_crops/1/crop_p8_c9_d1.png",
+      "path_bbox": [
+        1207.92,
+        1212.12,
+        1213.56,
+        1213.44
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 9,
+      "code": "WS16",
+      "digit_char": "6",
+      "rel_path": "data/digit_crops/6/crop_p8_c9_d6.png",
+      "path_bbox": [
+        1207.92,
+        1216.68,
+        1213.56,
+        1220.4
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 10,
+      "code": "WS19",
+      "digit_char": "1",
+      "rel_path": "data/digit_crops/1/crop_p8_c10_d1.png",
+      "path_bbox": [
+        1165.56,
+        1212.96,
+        1171.2,
+        1214.28
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 10,
+      "code": "WS19",
+      "digit_char": "9",
+      "rel_path": "data/digit_crops/9/crop_p8_c10_d9.png",
+      "path_bbox": [
+        1165.56,
+        1218.24,
+        1171.2,
+        1219.68
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 22,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c22_d5.png",
+      "path_bbox": [
+        1154.04,
+        764.76,
+        1159.68,
+        768.72
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 41,
+      "code": "WS10",
+      "digit_char": "1",
+      "rel_path": "data/digit_crops/1/crop_p8_c41_d1.png",
+      "path_bbox": [
+        659.64,
+        1178.4,
+        665.28,
+        1179.72
+      ],
+      "in_legend": true
+    },
+    {
+      "page": 8,
+      "callout_idx": 41,
+      "code": "WS10",
+      "digit_char": "0",
+      "rel_path": "data/digit_crops/0/crop_p8_c41_d0.png",
+      "path_bbox": [
+        659.64,
+        1182.96,
+        665.28,
+        1186.68
+      ],
+      "in_legend": true
+    },
+    {
+      "page": 8,
+      "callout_idx": 48,
+      "code": "WS1",
+      "digit_char": "1",
+      "rel_path": "data/digit_crops/1/crop_p8_c48_d1.png",
+      "path_bbox": [
+        520.32,
+        1147.92,
+        525.84,
+        1152.0
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 58,
+      "code": "WS4",
+      "digit_char": "4",
+      "rel_path": "data/digit_crops/4/crop_p8_c58_d4.png",
+      "path_bbox": [
+        1913.64,
+        1076.64,
+        1919.28,
+        1080.6
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 59,
+      "code": "WS4",
+      "digit_char": "4",
+      "rel_path": "data/digit_crops/4/crop_p8_c59_d4.png",
+      "path_bbox": [
+        1876.32,
+        1076.76,
+        1881.96,
+        1080.48
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 60,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c60_d5.png",
+      "path_bbox": [
+        1728.84,
+        1777.32,
+        1734.48,
+        1778.64
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 62,
+      "code": "WS1",
+      "digit_char": "1",
+      "rel_path": "data/digit_crops/1/crop_p8_c62_d1.png",
+      "path_bbox": [
+        1913.64,
+        1775.64,
+        1919.28,
+        1779.6
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 69,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c69_d5.png",
+      "path_bbox": [
+        1054.8,
+        852.96,
+        1060.44,
+        856.44
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 77,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c77_d5.png",
+      "path_bbox": [
+        659.64,
+        839.88,
+        665.28,
+        843.72
+      ],
+      "in_legend": true
+    },
+    {
+      "page": 8,
+      "callout_idx": 82,
+      "code": "WS8",
+      "digit_char": "8",
+      "rel_path": "data/digit_crops/8/crop_p8_c82_d8.png",
+      "path_bbox": [
+        532.32,
+        914.4,
+        537.84,
+        918.48
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 8,
+      "callout_idx": 88,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p8_c88_d5.png",
+      "path_bbox": [
+        447.12,
+        2043.12,
+        452.76,
+        2047.08
+      ],
+      "in_legend": false
+    },
+    {
+      "page": 9,
+      "callout_idx": 29,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p9_c29_d5.png",
+      "path_bbox": [
+        1792.56,
+        1204.92,
+        1798.2,
+        1208.4
+      ],
+      "in_legend": true
+    },
+    {
+      "page": 10,
+      "callout_idx": 30,
+      "code": "WS5",
+      "digit_char": "5",
+      "rel_path": "data/digit_crops/5/crop_p10_c30_d5.png",
+      "path_bbox": [
+        1727.16,
+        1415.16,
+        1732.8,
+        1419.0
+      ],
+      "in_legend": true
+    }
+  ]
+}
